@@ -1,5 +1,0 @@
-title: unpublished
-category: tests
-published: false
----
-This page should not appear in indexes, or rendered to a file.

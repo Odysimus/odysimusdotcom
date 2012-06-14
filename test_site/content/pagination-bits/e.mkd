@@ -1,5 +1,0 @@
-title: E
-category: pagination
-tags: tiny
----
-Page E
