@@ -1,0 +1,14 @@
+title: Last week.
+type: music-entry
+category: music
+date: 2011-09-16
+---
+
+It took an entire week of being undecided, and I don't know why, but I like this song.
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F23424010"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F23424010" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/the-kollection/the-white-panda-midnight-life">The White Panda - Midnight Life</a>
+
+This one is a little old, but it's a good tune.
+
+<iframe src="http://soundowl.com/embed/h3s" width="413" height="33" frameborder="0" scrolling="no"><a href="http://soundowl.com/track/h3s/washed-out-feel-it-all-around">Download Washed Out Feel It All Around</a></iframe><br><span><a href="http://soundowl.com/track/h3s/washed-out-feel-it-all-around">Download Washed Out Feel It All Around</a></span>

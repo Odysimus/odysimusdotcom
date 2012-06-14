@@ -1,0 +1,19 @@
+title: Mother Mother
+type: music-entry
+category: music
+date: 2011-08-04
+---
+This band is, like, cool and stuff.
+
+Here are my favorite tracks of off their two albums <u>O My Heart</u> and <u>Eurika</u>.
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F9262956"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F9262956" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/mother-mother/the-stand">The Stand</a> by <a href="http://soundcloud.com/mother-mother">Mother Mother</a></span>
+
+<iframe width="560" height="349" src="http://www.youtube.com/embed/0npq1MKg-MA?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
+
+Here is a more expansive collection:
+<object height="325" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F527226"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="325" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F527226" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/mother-mother/sets/eureka">EUREKA</a> by <a href="http://soundcloud.com/mother-mother">Mother Mother</a></span>
+
+Listen to their other album <a href="http://soundcloud.com/mother-mother/sets/mother-mother-discography">O My Heart</a>.

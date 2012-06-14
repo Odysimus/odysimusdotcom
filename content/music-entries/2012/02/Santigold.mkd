@@ -1,0 +1,9 @@
+title: Disparate Youth
+type: music-entry
+category: music
+date: 2012-02-21
+---
+
+Catchy tune.
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/fgUTVzg8Gn8" frameborder="0" allowfullscreen></iframe>

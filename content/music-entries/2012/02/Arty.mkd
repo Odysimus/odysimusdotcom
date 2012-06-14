@@ -1,0 +1,13 @@
+title: Arty
+type: music-entry
+category: music
+date: 2012-02-23
+---
+
+I am listening to this right now.
+
+[http://www.archive.org/download/2012-01-07/EM2012-02-11.mp3][arty]
+
+I really liked Arty's Bipolar EP, so this is a real treat.
+
+[arty]:http://www.archive.org/download/2012-01-07/EM2012-02-11.mp3

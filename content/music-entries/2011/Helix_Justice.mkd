@@ -1,0 +1,15 @@
+title: Helix
+type: music-entry
+category: music
+date: 2011-09-12
+---
+
+[Civilization][civ] was good, [Audio, Video, Disco][avd] was alright, and this one is pretty cool too. It's not on the level of _Cross_, but I still like it. New Justice!
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F23214303"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F23214303" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/nickraymondg/justice-helix">Justice - Helix</a>
+
+_Civilization has been my favorite new song of their new album, so far._
+
+[avd]:http://soundcloud.com/thebluewalrus/justice-audio-video-disco
+[civ]:http://soundcloud.com/lostmixes/justice-civilization

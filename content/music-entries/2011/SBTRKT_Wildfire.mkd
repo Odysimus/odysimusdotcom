@@ -1,0 +1,19 @@
+title: Wildfire
+type: music-entry
+category: music
+date: 2011-08-11
+---
+Take a chill pill... in the form of these two tracks.
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F16146336"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F16146336" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/hollywoodisaverb/sbtrkt-wildfire-ft-little">SBTRKT - Wildfire (ft. Little Dragon)</a></span>
+
+You might have heard this song in the form of a [remix][drake_wild] by Drake who [obviously had every lyric written on the palm of his hand][drake]! (Haters are going to hate, but at this point it's pretty easy).
+
+Here is another good one by <u>Little Dragon</u>. Enjoy.
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F13871509"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F13871509" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/littledragon/01-twice-1">Twice</a> by <a href="http://soundcloud.com/littledragon">Little Dragon</a></span>
+
+[drake]:http://www.youtube.com/watch?v=V-f46UYRzV8
+[drake_wild]:http://www.youtube.com/watch?v=V-f46UYRzV8

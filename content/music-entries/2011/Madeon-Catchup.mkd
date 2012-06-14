@@ -1,0 +1,27 @@
+title: Madeon
+type: music-entry
+category: music
+date: 2011-08-07
+---
+Madeon is amazing. If he could preform at [EDC][edc] he would be the best artist there, hands down. But he's [not old enough][madeon].
+Instead of just pretending like I have posted these songs (which I have, to my facebook and G+ accounts), I'm just going to pretend I haven't. They are worth the re-post, I think.
+
+I'm looking forward to more music from this kid.
+
+_Only you can stop low quality youtube videos. Remember 1080p before it remembers you._
+<iframe width="560" height="349" src="http://www.youtube.com/embed/HuC2MUmQaG4?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F6058181"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F6058181" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/madeon/pendulum-the-island-madeon-remix">Pendulum - The Island (Madeon Remix)</a> by <a href="http://soundcloud.com/madeon">Madeon</a></span>
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F10635130"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F10635130" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/madeon/yelle-que-veux-tu-madeon-remix">Yelle - Que Veux Tu (Madeon Remix)</a> by <a href="http://soundcloud.com/madeon">Madeon</a></span>
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F19061119"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F19061119" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/dan_aux_way_crazies/madeon-pop-culture-mash-up">Madeon - Pop Culture (Mash Up)</a> by <a href="http://soundcloud.com/dan_aux_way_crazies">Dan Aux</a></span>
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F15732147"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F15732147" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/isaidahip/madeon-shuriken">Madeon - Shuriken</a> by <a href="http://soundcloud.com/isaidahip">isaidahip</a></span>
+
+[edc]:http://en.wikipedia.org/wiki/Electric_Daisy_Carnival
+[madeon]:http://www.last.fm/music/Madeon/+wiki

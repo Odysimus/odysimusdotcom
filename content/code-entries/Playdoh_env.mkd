@@ -1,0 +1,49 @@
+title: Using Playdoh apps outside of Playdoh.
+type: code-entry
+category: code
+date: 2012-03-10
+---
+
+Django is cool and [Playdoh][playdoh] is also pretty cool. But, using django models and django's ORM is really cool. Using django's ORM (not in Playdoh) just involves some `os.environ` magic.
+
+    ::python
+    import os
+    import sys
+
+    # Add project to python path
+    sys.path.append("/path/to/your/project/")
+    # Set magic variables.
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project.settings')
+
+    # It works?
+    from project.app.models import some_object
+    # It works!
+
+Things are different when you want to do the same thing with Playdoh.
+
+    ::python
+    import os
+    import sys
+
+    # We still do this
+    sys.path.append("/path/to/your/project/")
+    # This stays the same
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project.settings')
+
+    # Here is the difference.
+    from funfactory import manage
+    manage.setup_environ("/path/to/your/project/manage.py", more_pythonic=True)
+
+    # Import some objects.
+    from project.app.models import some_object
+
+Playdoh uses [funfactory][ff] for library configuration. From looking at the source code, it looks
+like [`manage.setup_environ`][setup] infers path information from the `manage.py` in a project's
+root dir when loading libraries (i.e. things in the `vendor` directory).
+
+You should now be able to import your apps' models and use Django's ORM outside of Playdoh!
+
+
+[ff]:https://github.com/mozilla/funfactory
+[setup]:https://github.com/mozilla/funfactory/blob/master/funfactory/manage.py
+[playdoh]:https://github.com/mozilla/playdoh

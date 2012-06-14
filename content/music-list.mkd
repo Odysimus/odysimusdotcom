@@ -1,0 +1,9 @@
+title: Music
+slug: music
+type: music-list
+pagination:
+    list: page.subpages
+    sort_key: datetime
+    sort_reverse: true
+    limit: 10
+---

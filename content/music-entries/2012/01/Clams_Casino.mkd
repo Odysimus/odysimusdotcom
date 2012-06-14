@@ -1,0 +1,24 @@
+title: Clams Casino
+type: music-entry
+category: music
+date: 2012-01-07
+---
+
+The term is about to start. This is what i'm listening to.
+
+I found this new artist today. I first heard this RAC remix, which lead me to finding [Mr. Casino][ct].
+
+
+The original.
+
+<iframe width="480" height="360" src="http://www.youtube.com/embed/YbvrM6Nj2Ok?rel=0" frameborder="0" allowfullscreen></iframe>
+
+The RAC Remix
+<object height="81" width="100%"> <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F21123056"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F21123056" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/dpumusic/lil-wayne-fly-by-night-r3k">Lil Wayne -- Fly By Night (R3K Remix)</a> by <a href="http://soundcloud.com/dpumusic">DPUmusic</a></span> 
+
+More.
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/a3Sn8n0DOs4?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
+
+[ct]:https://twitter.com/#!/clammyclams

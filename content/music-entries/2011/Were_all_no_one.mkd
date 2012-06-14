@@ -1,0 +1,10 @@
+title: We're all no one.
+type: music-entry
+category: music
+date: 2011-08-25
+---
+
+Nervo (Afrojack, Steve Aoki & Cheyenne Giles Edit) - We're all no one.
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F21909161"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F21909161" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/user8615105/were-all-no-one">Were-All-No-One</a> by <a href="http://soundcloud.com/user8615105">user8615105</a></span>

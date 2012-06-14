@@ -1,0 +1,11 @@
+title: First Post
+type: music-entry
+category: music
+date: 2011-07-29
+---
+I've heard this song on various BBC radio stations. It's pretty neat.
+
+_Dirty South & Thomas Gold feat. Kate Elsworth - Alive (Original Mix)_
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F19735080"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F19735080" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/marios-muzik/dirty-south-thomas-gold-kate">Dirty South, Thomas Gold, Kate Elsworth - Alive feat. Kate Elsworth (Original Mix)</a> by <a href="http://soundcloud.com/marios-muzik">Marios Muzik</a></span>
+

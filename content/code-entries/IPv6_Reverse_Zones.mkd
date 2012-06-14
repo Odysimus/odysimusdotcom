@@ -1,0 +1,77 @@
+title: Reverse IPv6 Zones
+type: code-entry
+category: code
+date: 2012-01-08
+---
+Alas IPv6.
+
+
+I have been workgin on building [bind][bind] files while using Google's IP address library
+[ipaddr][ipaddr] (awesome library), which is written in Python.
+
+I'm working on something that requires me to determine which reverse zone an IP belongs in. In IPv4
+this is super easy. Mainly it's easy because an ipv4 address has *one* correct representation:
+
+        w.x.y.z # Where w,x,y,z are in [0 through 255]
+
+The reverse domain boundaries of an IPv4 domain are along octet boundaries. Since IPv4 adresses
+always have four octets, mapping an IPv4 address to a reverse domain is a one to one
+'longest-prefix-match' function. For example say we had the reverse domain's `4.193.128.in-addr.arp`
+and `193.128.in-addr.arpa`. Which reverse domain would `128.193.4.1` fall into? It's pretty easy to
+tell that it belongs to `4.193.128.in-addr.arpa`. It's full reverse name would plainly be
+`1.4.193.128.in-addr.arpa`.
+
+In IPv6 things are different. IPv6 allows IP addresses to be represented differently. For example
+`1234:0::`, `1234:0:0::` and `1234::` are all the same address. But those three addresses all have
+the same reverse notation! There goes that nice one to one function we had with IPv4 addresses. To
+map an IPv6 address to it's correct reverse domain using a 'longest-prefix-match' function, we need
+to get the address into a very specific format.
+
+First let's look at what a reverse IPv6 domain name looks like.
+
+The reverse address of `2620:105:F000::1` looks like this:
+
+        1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.F.5.0.1.0.0.2.6.2.ip6.arpa # 32*4 bits = 128 bits
+
+Comparing IPv4 notation with IPv6 we see that '.' is still used as a separator, there is no
+truncation (there are always 32 four bit 'nibbles'), and `in-addr.arpa` is replaced with
+`ip6.arpa`. This is the correct and *only* way the reverse representation should look (afaik).
+
+So back to the problem. Given an address like `2620:105:F000::1`, find the proper reverse domain.
+Sounds like a job for the function `IPv6Address('2620:105:F000::1').nibble` followed by a
+'longest-prefix-match' like we did with IPv4 addresses. As far as I know `nibble` doesn't exist, so
+I wrote my own function to calculate it.
+
+        ::python
+        """
+        @param: addr - A valid IPv6 string
+        @return: correct reverse zone representation
+        >>> nibblize('2620:0105:F000::1')
+        '2.6.2.0.0.1.0.5.F.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1'
+        >>> nibblize('2620:0105:F000:9::1')
+        '2.6.2.0.0.1.0.5.f.0.0.0.0.0.0.9.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1'
+        >>> nibblize('2620:0105:F000:9:0:1::1')
+        '2.6.2.0.0.1.0.5.f.0.0.0.0.0.0.9.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.1'
+        """
+
+        import ipaddr
+        def nibblize( addr ): # Hey nibalizer!
+            ip_str = ipaddr.IPv6Address(addr).exploded
+            return '.'.join(list(ip_str.replace(':','')))
+
+It would be cool if I could do this:
+
+        ::python
+        IPv6Address('2620:0105:F000::1').nibbles
+        >>> ip = IPv6Address('2620:0105:F000::1')
+        >>> ip.nibbles
+        '2.6.2.0.0.1.0.5.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1'
+
+Feature request?
+
+References:
+[http://www.zytrax.com/books/dns/ch3/#ipv6][ref1]
+
+[ref1]:http://www.zytrax.com/books/dns/ch3/#ipv6
+[ipaddr]:http://code.google.com/p/ipaddr-py/
+[bind]:http://en.wikipedia.org/wiki/BIND

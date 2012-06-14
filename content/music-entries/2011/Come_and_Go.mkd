@@ -1,0 +1,9 @@
+title: Come and Go
+type: music-entry
+category: music
+date: 2011-11-08
+---
+
+A Nice tune.
+
+<iframe src="http://soundowl.com/embed/1zu9" width="413" height="33" frameborder="0" scrolling="no"><a href="http://soundowl.com/track/1zu9/alan-wilkis-come-and-go-feat-the-kickdrums">Alan Wilkis Come and Go (feat. The KickDrums)</a></iframe><br>

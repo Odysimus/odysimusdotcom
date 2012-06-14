@@ -1,134 +1,177 @@
-@import url(http://fonts.googleapis.com/css?family=Carter+One);
+/* Base CSS styles for uberj
+ *
+ * Color scheme based on main photo's average color: 
+ * http://colorschemedesigner.com/#3D21T7tE0w0w0
+ */
 
-/* Layout */
-#wrap {
-    width: 800px;
-    margin: 10px auto 20px;
+/* Main */
+html {
+    background-color: #ffffff;
+}
+#body_wrapper{
+    width:          960px;
+    margin:         25px auto;
+    background-color: #ffffff;
+
+    /* Main text styles */
+    color:          #1c2c17;
+    font-size:      16px;
+    font-family:    "helvetica", lucida, tahoma, arial, sans-serif;
+    line-height:    1.4em;
+}
+
+/* Links */
+a, a:visited{
+    font-weight:        bold;
+    color:              #43A369;
+    text-decoration:    none;
+}
+a:hover{
+    color: #6B4287;
+}
+
+/* Headings */
+h1, h2, h3{
+    font-weight: normal;
+}
+h1{ font-size: 2em      }
+h2{ font-size: 1.5em    }
+h3{
+    font-size: 1em
+    font-weight: bold;
 }
 
 /* Header */
-header {
-    border-bottom: 1px solid #A60000;
-    padding: 10px;
-    overflow: hidden;
-    position: relative;
-    height: 40px;
+#header{
+    display:        table;
+    width:          100%;
+    /*border-bottom:  solid 1px #777;*/
+    margin-bottom:  20px;
+    font-family:    "Play", sans-serif;
+    border-bottom:     solid 5px #777;
+    border-top:     solid 5px #777;
 }
-header h1 {
-    display: inline-block;
-    margin: 0px;
-    position: absolute;
-    bottom: -10px;
-    right: 10px;
-    font-size: 3em;
-    font-family: 'Carter One', sans-serif;
-}
-header h1 a {
-    text-decoration: none;
-    color: #A60000;
-}
-header h1 a:hover {
-    text-decoration: none;
-}
-header nav {
-    display: inline-block;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    font-family: 'Carter One', sans-serif;
-}
-header nav a {
-    text-decoration: none;
-    font-size: 1.2em;
-    padding: 0 10px;
-    margin-right: 5px;
-    color: #A60000;
-}
-header nav a:hover {
-    text-decoration: none;
-}
-header nav a.active {
-    border-top: 1px solid #A60000;
-}
-/* Body */
-#content {
-    position: relative; 
-    padding: 10px;
-    color: #4E3434;
-    line-height: 1.5;
-    font-size: 16px;
-    font-family: serif;
+#header h1{
+    display:    table-cell;
+    font-size:  1.5em;
 }
 
-#content span.version_note {
-    position: absolute;
-    right: 0px;
-    top: 5px;
-    font-size: 10px;
+/* Menu */
+#menu{
+    display:    table-cell;
+    font-size:  1.2em;
+    text-align: right;
+}
+#menu a{
+    padding-top:    5px;
+    margin-left:    20px;
+}
+#menu .selected{
+    border-top:     solid 1px #777;
 }
 
-
-a {
-    color: #BF3030;
-    font-weight: bold;
-    text-decoration: none;
-}
-a:hover {
-    color: #EF4030;
-    text-decoration: underline;
-}
-#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
-    font-family: 'Carter One', sans-serif;
-    font-weight: 100;
-    color: #322;
-    margin: 5px 0 10px;
-}
-h1 a.heading_anchor, h2 a.heading_anchor, h3 a.heading_anchor
-h4 a.heading_anchor, h5 a.heading_anchor, h6 a.heading_anchor {
-    display: none;
-    color: #A60000;
-}
-h1:hover a.heading_anchor, h2:hover a.heading_anchor,
-h3:hover a.heading_anchor, h4:hover a.heading_anchor,
-h5:hover a.heading_anchor, h6:hover a.heading_anchor {
-    padding: 2px;
-    border: 3px;
-    display: inline;
-    font-weight: normal;
-}
-h1 a.heading_anchor:hover, h2 a.heading_anchor:hover,
-h3 a.heading_anchor:hover, h4 a.heading_anchor:hover,
-h5 a.heading_anchor:hover, h6 a.heading_anchor:hover {
-    color: #FFF;
-    background-color: #A60000;
+#header #title a{
+    color:      #4B4742;
 }
 
-p {
-    margin: 0 0 20px 0;
-}
-pre {
-    padding: 5px 0 5px 10px;
-    border-left: 3px solid #DDD;
-    font-family: Monospace;
-    font-size: 14px;
-    color: #555;
-    background-color: #F0F0F0;
-}
-code {
-    background-color: #F0F0F0;
-    padding: 1px 2px;
-    font-weight: bold;
-    font-size: 14px;
+/* Content */
+#content{
+    margin:     0px 0px;
 }
 
 /* Footer */
-footer {
-    border-top: 1px solid #A60000;
-    padding: 10px;
-    font-size: 0.7em;
-    color: #999;
+#footer{
+    display:        table;
+    width:          100%;
+    border-top:     solid 1px #777;
+    margin-top:     20px;
+    padding-top:    5px;
 }
-footer p {
-    margin: 0 10px 0 0;
-    display: inline;
+#footer #about_site{
+    display:        table-cell;
+    text-align:     left;
 }
+#footer #copyright{
+    display:        table-cell;
+    text-align:     right;
+}
+
+/* Misc */
+.small_text{
+    font-size:  0.8em;
+}
+
+.light_text{
+    color:      #777;
+}
+
+.caption{
+    text-align: right;
+    margin:     0px;
+}
+
+pre{background:#E0E0D1; 
+padding:1.5em;
+}
+
+.hll { background-color: #E0E0D1 }
+.c { color: #408080; font-style: italic } /* Comment */
+.err { border: 1px solid #FF0000 } /* Error */
+.k { color: #008000; font-weight: bold } /* Keyword */
+.o { color: #666666 } /* Operator */
+.cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.cp { color: #BC7A00 } /* Comment.Preproc */
+.c1 { color: #408080; font-style: italic } /* Comment.Single */
+.cs { color: #408080; font-style: italic } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #FF0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00A000 } /* Generic.Inserted */
+.go { color: #808080 } /* Generic.Output */
+.gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0040D0 } /* Generic.Traceback */
+.kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #008000 } /* Keyword.Pseudo */
+.kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #B00040 } /* Keyword.Type */
+.m { color: #666666 } /* Literal.Number */
+.s { color: #BA2121 } /* Literal.String */
+.na { color: #7D9029 } /* Name.Attribute */
+.nb { color: #008000 } /* Name.Builtin */
+.nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.no { color: #880000 } /* Name.Constant */
+.nd { color: #AA22FF } /* Name.Decorator */
+.ni { color: #999999; font-weight: bold } /* Name.Entity */
+.ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.nf { color: #0000FF } /* Name.Function */
+.nl { color: #A0A000 } /* Name.Label */
+.nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.nt { color: #008000; font-weight: bold } /* Name.Tag */
+.nv { color: #19177C } /* Name.Variable */
+.ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #666666 } /* Literal.Number.Float */
+.mh { color: #666666 } /* Literal.Number.Hex */
+.mi { color: #666666 } /* Literal.Number.Integer */
+.mo { color: #666666 } /* Literal.Number.Oct */
+.sb { color: #BA2121 } /* Literal.String.Backtick */
+.sc { color: #BA2121 } /* Literal.String.Char */
+.sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.s2 { color: #BA2121 } /* Literal.String.Double */
+.se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.sh { color: #BA2121 } /* Literal.String.Heredoc */
+.si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.sx { color: #008000 } /* Literal.String.Other */
+.sr { color: #BB6688 } /* Literal.String.Regex */
+.s1 { color: #BA2121 } /* Literal.String.Single */
+.ss { color: #19177C } /* Literal.String.Symbol */
+.bp { color: #008000 } /* Name.Builtin.Pseudo */
+.vc { color: #19177C } /* Name.Variable.Class */
+.vg { color: #19177C } /* Name.Variable.Global */
+.vi { color: #19177C } /* Name.Variable.Instance */
+.il { color: #666666 } /* Literal.Number.Integer.Long */

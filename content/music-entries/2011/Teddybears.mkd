@@ -1,0 +1,24 @@
+title: Teddybears
+type: music-entry
+category: music
+date: 2011-09-05
+---
+
+The Teddybears! So, the first time I heard this band I was 16? I can't remember how, but I ended up with a CD from my friend Bryan. Along with teenage emo bands there was [this track][yours_to_keep] hidden halfway through the track list. Little did I know that years later, while high on opiates (It was for my back, I swear), I would _truely_ discover the Teaddybears while listening to the complete album _Rock and Roll Highschool_ (pun probably intended).
+
+Some of their older work includes [this][punk] and [this][cobra_style].
+
+They have some new stuff out.
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F17691377"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F17691377" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/teddybearsrock/why-you-wanna-look-at-me-like-feat-wiley">Why You Wanna Look At Me Like That feat Wiley</a> by <a href="http://soundcloud.com/teddybearsrock">Teddybears Rock</a></span>
+
+<object height="225" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F886977"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="225" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F886977" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/teddybearsrock/sets/no-more-michael-jackson-ep">No More Michael Jackson EP</a> by <a href="http://soundcloud.com/teddybearsrock">Teddybears Rock</a></span>
+
+
+##### They are Swedish. Can you tell?
+
+[cobra_style]:http://www.youtube.com/watch?v=mBTSG_Tryhc
+[yours_to_keep]:http://www.youtube.com/watch?v=fONW4gZ5IXo
+[punk]:http://www.youtube.com/watch?v=eGihQlq-SM8

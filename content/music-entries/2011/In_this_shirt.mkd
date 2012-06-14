@@ -1,0 +1,22 @@
+title: In this shirt
+type: music-entry
+category: music
+date: 2011-10-02
+---
+
+Royksopp is band that consistently makes really great music. Some of their tracks are real [gems][remind_me]. _Melody A.M._ is my favorite album from them. It [has][in_space] some [really][leno] good [stuff][so_easy]. Whenever I meet someone who likes this band I know they are cool.
+
+They released two songs over the summer (one is a remix), both of which are more than 13 minutes long.
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22391656"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22391656" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/weeennnzzz/in-this-shirt">In This Shirt</a>
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22395103"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22395103" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/isdobleac/shores-of-easy">Shores Of Easy</a>
+
+
+
+[remind_me]:https://www.youtube.com/watch?v=eo4u4JJAPGk&ob=av2e
+[in_space]:http://www.youtube.com/watch?v=QLnFpjHArwQ
+[leno]:http://www.youtube.com/watch?v=qb9WgYW0ruE
+[so_easy]:http://www.youtube.com/watch?v=bmatItacEvM

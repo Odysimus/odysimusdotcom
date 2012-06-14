@@ -1,0 +1,9 @@
+title: Almost there.
+type: music-entry
+category: music
+date: 2012-03-18
+---
+
+I have to take a final and write a paper. After that I'm done with academics for six whole months.
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F24412995&show_artwork=true"></iframe>

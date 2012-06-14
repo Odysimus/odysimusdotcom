@@ -1,0 +1,13 @@
+title: Bipolar
+type: music-entry
+category: music
+date: 2012-02-13
+---
+
+It's Monday. Better listen to trance-ish house music...
+
+<div><object width="480" height="480"><param name="movie" value="http://www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fanjunabeats%2Fmat-zos-bipolar-mix%2F&embed_uuid=19de33cb-4fd7-4328-8d92-b828b3a248f5&stylecolor=&embed_type=widget_standard"></param><param name="allowFullScreen" value="true"></param><param name="wmode" value="opaque"></param><param name="allowscriptaccess" value="always"></param><embed
+src="http://www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fanjunabeats%2Fmat-zos-bipolar-mix%2F&embed_uuid=19de33cb-4fd7-4328-8d92-b828b3a248f5&stylecolor=&embed_type=widget_standard" type="application/x-shockwave-flash" wmode="opaque" allowscriptaccess="always" allowfullscreen="true" width="480" height="480"></embed></object><div style="clear:both; height:3px;"></div><p style="display:block; font-size:12px;
+font-family:Helvetica, Arial, sans-serif; margin:0; padding: 3px 4px; color:#999;"><a href="http://www.mixcloud.com/anjunabeats/mat-zos-bipolar-mix/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=resource_link" target="_blank" style="color:#02a0c7; font-weight:bold;">Mat Zo's Bipolar Mix</a><span> by </span><a
+href="http://www.mixcloud.com/anjunabeats/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=profile_link" target="_blank" style="color:#02a0c7; font-weight:bold;">Anjunabeats</a><span> on </span><a href="http://www.mixcloud.com/?utm_source=widget&utm_medium=web&utm_campaign=base_links&utm_term=homepage_link" target="_blank" style="color:#02a0c7; font-weight:bold;"> Mixcloud</a></p><div style="clear:both;
+height:3px;"></div></div>

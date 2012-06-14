@@ -1,0 +1,28 @@
+{# Template for the code page #}
+
+{% extends "base.html" %}
+
+{% block head %}
+    <style>
+        #img_wrap{
+            float:          right;
+            margin-right:   20px;
+            margin-bottom:  20px;
+        }
+    </style>
+{% endblock %}
+
+{% block js_doc_ready %}
+    menu_highlight('code');
+{% endblock %}
+
+{% block content %}
+    <!-- page title -->
+    <h1 id='page_title'>{{ page.title }}</h1>
+
+    <!-- main content title -->
+    <div id='home_content'>
+        {{ page.content }}
+    </div>
+
+{% endblock %}

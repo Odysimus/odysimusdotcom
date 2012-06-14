@@ -1,0 +1,125 @@
+title: Notes on how to get an atmega128 tool chain working on Linux
+type: code-entry
+category: code
+date: 2012-01-18
+---
+Here is a quick write up on what I did to get a tool chain working for the atmega128 microprocessor in Linux.
+
+###Install Notes
+The library file, `m128ref.inf`, can be found here [http://www.attiny.com/definitions.htm][library]
+
+    ::bash
+    wget http://www.attiny.com/software/AVR000.zip
+    unzip AVR000.zip
+    ls AVR000/m128ref.inf
+
+OSU's avrdude is found here [http://beaversource.oregonstate.edu/projects/osuisp2/wiki/AvrdudeLinux][avrdude]
+
+    ::bash
+    svn co --username <onid_username> https://code.oregonstate.edu/svn/osuisp2
+
+Install the dependencies and follow the instructions on Beaversource to install avrdude. From what I understand OSU has patched the drivers to specifically work with the board we use in Lab.
+
+Note: DO NOT get the avr assembler from ubuntu's repo's or EPEL. The version of the code is ancient (November 2007).
+
+The avra (AVR assembler) is found here [http://sourceforge.net/projects/avra/files/latest/download][avra]
+
+    ::bash
+    wget http://sourceforge.net/projects/avra/files/latest/download -O avara-1.3.0.tar.bz2
+
+I had some trouble installing this, here are the hacks I did to get it installed.
+
+    ::bash
+    cd avra-1.3.0/src/
+    touch NEWS ChangeLog
+    automake --add-missing
+    ./configure
+    make
+    sudo make install
+
+Make sure you have the package `automake` and `build-essentials` installed (this is what they are called on ubuntu).
+
+
+Now that you have everything installed you can compile `.asm` files into `.hex` files.
+
+    ::bash
+    avra ece375-L1_v2.asm
+
+You should now see a `.hex` file. Use avrdude to upload it to the board.
+
+    ::bash
+    avrdude -c osuisp2 -P /dev/usb/hiddev0 -p m128 -e -U flash:w:ece375-L1_v2.hex -v
+
+###Compiling C program
+Getting C code to run is just as easy as getting assembly running. First you need some packages (these are their names according to `aptitude`).
+
+    ::bash
+    avr-libc
+    gcc-avr
+
+Install them:
+
+    ::bash
+    sudo aptitude install avr-libc gcc-avr
+
+You *might* not need avr-libc. If I undertand correctly, it installs the `m128ref.inf` library, which we have already done. But it doesn't hurt.
+
+To compile C code run the following command where `$(FILE)` is the name of your program. (i.e. if you had a C file `foo.c`, `FILE` would be `FILE="foo"`.
+
+    ::bash
+    avr-gcc -Wall -mmcu=atmega128 -o $(FILE).o $(FILE).c
+
+This compiles the `.o` file. To get the `.hex` file, run:
+
+    ::bash
+    avr-objcopy -j .text -O ihex $(FILE).o $(FILE).hex
+
+Now use `avrdude`, as described earlier, to flash your board with the `.hex` file.
+
+    ::bash
+    avrdude -c osuisp2 -P /dev/usb/hiddev0 -p m128 -e -U flash:w:$(FILE).hex -v
+
+##Makefiles
+
+Here are the `Makefiles` I used for lab.
+
+###Assembly Makefile
+
+    ::Makefile
+    FILE="ece375-L1_v2"
+    build:
+        ../../avra-1.3.0/src/avra $(FILE).asm
+        rm $(FILE).obj
+        rm $(FILE).cof
+        rm $(FILE).eep.hex
+
+    install:
+        avrdude -c osuisp2 -P /dev/usb/hiddev0 -p m128 -e -U flash:w:$(FILE).hex -v
+
+    clean:
+        rm $(FILE).hex
+
+###C Code Makefile
+
+    ::Makefile
+    FILE="ece375-L2_skeleton"
+    build:
+        avr-gcc -Wall -mmcu=atmega128 -o $(FILE).o $(FILE).c
+        avr-objcopy -j .text -O ihex $(FILE).o $(FILE).hex
+        rm $(FILE).o
+
+    install:
+        avrdude -c osuisp2 -P /dev/usb/hiddev0 -p m128 -e -U flash:w:$(FILE).hex -v
+
+    clean:
+        rm $(FILE).o
+        rm $(FILE).hex
+
+
+##Do you have questions?
+
+If you have questions, hop on IRC and ask me!! I'm on `irc.freenode.net` in the channel `#osu-lug`. My handle is `uberj`.
+
+[library]:http://www.attiny.com/definitions.htm
+[avrdude]:http://beaversource.oregonstate.edu/projects/osuisp2/wiki/AvrdudeLinux
+[avra]:http://sourceforge.net/projects/avra/files/latest/download

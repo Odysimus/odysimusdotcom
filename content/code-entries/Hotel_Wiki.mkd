@@ -1,0 +1,20 @@
+title: One way around a Wifi portal.
+type: code-entry
+category: code
+date: 2011-10-21
+---
+
+This summer I went to Linux-con. My group of friends stayed at a youth hostel that offered internet that you had to sign up for. To use the internet you had to log-in with user credentials using a web portal. We found a way around it.
+
+#### The setup
+The network, from our point of view, seemed fairly simple. Everyone who associated with an access-point (AP) was dropped onto a VLAN and given an IP via DHCP. Using this IP you could get to the registration page, but besides that, _most_ useful protocols were being filtered. I say "most" because not everything was blocked. Port 53 was unfiltered and we were able to resolve host names using external DNS servers. One of my friends settled for just tunneling through DNS as a solution. In
+hind site, tunneling with ssh _should_ have worked too (I doubt they were checking for valid DNS traffic) and I'm not sure why we didn't just do that, oh well.
+
+#### The solution
+Being on that severely firewalled VLAN was not very useful. We needed a way to get onto the VLAN that had access to the larger internet. The good news for us was that these "web portal login pay-walled" internet set ups all work very similarly. You get an account, you login, the system records your MAC address as "valid" and not so magically you end up on a different VLAN and are able to check Facebook. Hurray! Hurray? Yes, all you have to do is get a mac that is already "valid" and you are set.
+
+But what about collisions? Yes, if you are on a layer 2 network with someone with the same MAC address as you things *really* don't work to well. After TCP sessions kept on collapsing we needed a fix. Since the problem is isolated to level 2, going up 3 floors, sniffing an authenticated mac using Kismet and using that mac solved our problems. Internet for all.
+
+#### *The* solution
+WPA2 encryption for communicating to the access points and a RADIUS server serving client credentials for use on the second VLAN would %100 make this attack not work. Using WPA-PSK would be sort of silly seeing how it's "Pre-Shared *KEY*" and not "KEY*S*". With any sort of encryption between the edge hosts and the AP's stealing a mac would be in vain. You wouldn't know the cipher that the AP is using and so any data sent or received would be seen as garbage on both sides of any connection (it probably would fail the CRC check and fail to
+even make it onto the wire).

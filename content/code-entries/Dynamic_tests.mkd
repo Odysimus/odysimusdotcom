@@ -1,0 +1,38 @@
+title: Dynamic test cases
+type: code-entry
+category: code
+date: 2011-12-21
+---
+
+A few weeks ago I spent hours trying to figure out how to create dynamic tests at run time with python's unittest library. Specifically I wanted to do it in twisted's unittest library, but the one in standard lib is very similar to the one in twisted.
+
+What I was trying to do was run tests that were not written yet. I was going to read in a file that had data that described the input and expected result, then run a test to make sure that input data did indeed generate that result. Here was the solution I came up with (some credit is owed to MostAwesomeDude who's two words "class scope" made me rethink how to do this).
+
+Here is the basic Idea.
+
+    ::python
+    import unittest
+
+    def build_test( self, *params ):
+        def general_test( self ):
+            ...
+            ... Do test that relies on params.
+            ... Just make sure you 'assert' something.
+            ...
+        return general_test
+
+    class Tester(object):
+        class TestSomeThing(unittest.TestCase):
+            pass
+
+    if __name__ == "__main__":
+        test_cases = [('input_a','expected_a'),('input_b','expected_b'),....]
+        for input, expected in test_cases:
+            test = build_tests( input, expected )
+            setattr( TestBindBuilds, "test_%s" % (input) , test )
+
+        unittest.main()
+
+This is a toy solution to a problem that doesn't exist. The *real* code that I wrote using this method can be found here [on my github][code].
+
+[code]:https://raw.github.com/uberj/maintain-bindbuilds/master/build_test.py

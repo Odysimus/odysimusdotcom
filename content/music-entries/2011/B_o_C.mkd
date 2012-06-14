@@ -1,0 +1,10 @@
+title: Boards of Canada
+type: music-entry
+category: music
+date: 2011-10-07
+---
+
+Simple can be a good thing.
+<div>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/tpxCkYX8vHQ?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>

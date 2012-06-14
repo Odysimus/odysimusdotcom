@@ -1,0 +1,30 @@
+title: Today.
+type: music-entry
+category: music
+date: 2011-08-08
+---
+This is what I listened to today at work.
+
+<iframe src="http://soundowl.com/embed/1agw" width="413" height="33" frameborder="0" scrolling="no"><a href="http://soundowl.com/track/1agw/empire-of-the-sun-we-are-the-people">Download Empire Of The Sun We Are The People</a></iframe>
+
+A wubbly dubstep version (If you are into that sort of thing).
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F5209641"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F5209641" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/stephan-jacobs/empire-of-the-sun-we-are-the-people-stephan-jacobs-remix">Empire of the Sun - We Are The People (Stephan Jacobs Remix)</a> by <a href="http://soundcloud.com/stephan-jacobs">Stephan Jacobs</a></span>
+
+
+<iframe src="http://soundowl.com/embed/g66" width="413" height="33" frameborder="0" scrolling="no"><a href="http://soundowl.com/track/g66/empire-of-the-sun-walking-on-a-dream">Download Empire Of The Sun Walking On A Dream</a></iframe>
+
+I switched bands half way through the day.
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F13471318"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F13471318" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/fosterthepeoplemusic/helenabeat">Helena Beat</a> by <a href="http://soundcloud.com/fosterthepeoplemusic">Foster The People</a></span>
+
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F13471671"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F13471671" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/fosterthepeoplemusic/pumpedupkicks">Pumped Up Kicks</a> by <a href="http://soundcloud.com/fosterthepeoplemusic">Foster The People</a></span>
+
+This remix led me to the two previous tracks.
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F18061128"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F18061128" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/soundgasm-org/pumped-up-kicks-skeet-skeet">Foster The People - Pumped Up Kicks (Skeet Skeet Remix)</a> by <a href="http://soundcloud.com/soundgasm-org">Soundgasm.org</a></span>

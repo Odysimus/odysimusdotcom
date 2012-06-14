@@ -1,0 +1,16 @@
+title: About
+type: about
+url: /about/index.html
+---
+I am Jacques Uber; an undergradute student at [Oregon State University][osu] and officially studying computer science.
+I enjoy listening to music, so I started this website to share the music I'm listening to at the moment. I played the tuba in highschool and my love for bass has persisted. Most of the music that I post is being heard through my headphones (expensive, but one of the best investments I've ever made) or my oversized speakers (my neighbors hate me). So, If you really want to feel what I am hearing... _turn_ _up_ _the_ _bass_.
+
+More about Myself
+-----------------
+During the school year I work at [NET][net] doing various IT tasks that usually involve debugging or writing code. At NET, I work for both Network Security and Network Engineering.
+
+I also have a [github][gith] account where most of the code I write in my spare time ends up.
+
+[osu]:http://oregonstate.edu
+[net]:http://oregonstate.edu/net/
+[gith]:http://github.com/uberj

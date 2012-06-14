@@ -1,0 +1,30 @@
+{# Music list template #}
+
+{% extends "music.html" %}
+
+{% block content %}
+    <div id='img_wrap'>
+        <img src='/img/The-Dub-Tank-The-Dubstep-Tank.jpg'/>
+    </div>
+
+    {% if page.pagination %}
+        {% for subpage in page.pagination.page_items %}
+            <hr>
+            <a href="{{subpage.url}}"><h2>{{subpage.title}}</h2></a>
+            {{subpage.content}}
+            <br/>
+            <br/>
+        {% endfor %}
+        <span>
+            {% if page.pagination.prev_page %}
+                <a href="{{ page.pagination.prev_page.url }}">Previous Page</a>
+            {% endif %}
+
+            Page {{ page.pagination.cur_page }} of {{ page.pagination.num_pages }}
+            {% if page.pagination.next_page %}
+                <a href="{{ page.pagination.next_page.url }}">Next Page</a>
+            {% endif %}
+        </span>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,27 @@
+title: JParraga
+type: music-entry
+category: music
+date: 2012-01-22
+---
+
+These are some video's from a Youtube channel by a user named JParraga. His video's are magnificent. The music is awesome but the visuals are even better. They make me want to travel.
+
+[JParraga][chan]'s youtube channel.
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/cRBT-C3PfuM?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/DWsSmxAsnig" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/zn-AwP0LxvQ" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/ZKCsJs1qgv4" frameborder="0" allowfullscreen></iframe>
+
+Trance music on Youtube is usually accompanied by a picture of a girl wearing scandalas clothes. These videos truly do the music justice, I think.
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/KmiYCYoPd8A" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/f0J3tcrIBIE" frameborder="0" allowfullscreen></iframe>
+
+
+
+[chan]:http://www.youtube.com/user/JParragaTV?feature=watch

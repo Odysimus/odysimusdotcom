@@ -1,0 +1,22 @@
+{# Music entry template #}
+
+{% extends "code.html" %}
+
+{% block content %}
+
+    <!-- title heading -->
+    <div id='code-heading'>
+        <h1 class='title'>
+            {{ page.title }}
+        </h1>
+        <div class='subtitle'>
+            By {{ page.author }}| {{ page.datetime }}
+        </div>
+    </div>
+
+    <!-- entry content -->
+    <div id='code-content'>
+        {{ page.content }}
+    </div>
+
+{% endblock %}

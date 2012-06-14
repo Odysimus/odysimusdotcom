@@ -1,0 +1,11 @@
+title: M83 - Midnight City
+type: music-entry
+category: music
+date: 2011-08-01
+---
+I first heard M83's album <u>Before the Dawn Heals Us</u> in an old damp basement of my friend's parents house. I immediately was convinced I liked the band after hearing <a href="http://www.youtube.com/watch?v=rZnJciiFIYI" title="Teen Angst">Teen Angst</a>. Here is <u>Moonlight City</u> off of their new upcoming album <u>Hurry Up, We're Dreaming</u>.
+
+<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F19087066"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F19087066" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a
+href="http://soundcloud.com/m83/midnight-city">Midnight City</a> by <a href="http://soundcloud.com/m83">M83</a></span>
+
+<a href="http://www.youtube.com/watch?v=sWsUNbdc5IM&amp;NR=1" title="More.">More.</a>

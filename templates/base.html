@@ -1,59 +1,75 @@
-<html>
+{# Base template #}
 
-<head>
-  <title>{{ site.title }} ~ {{ page.title }}</title>
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="/css/base.css" />
-  <link rel="stylesheet" type="text/css" href="/css/pygments.css" />
-  {% block head %}{% endblock %}
-  <script type="text/javascript">
-    // Google analytics.
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-4316437-2']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-</head>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<body>
-  <div id="wrap">
-    <header>
-      <h1><a href="/">wok</a></h1>
-      <nav>
-        {%- for nav in site.tags['_nav']|sort(attribute='nav_sort') %}
-          {%- if nav.url == page.url %}
-            <a href="{{ nav.url }}" class="active">{{ nav.title }}</a>
-          {%- else %}
-            <a href="{{ nav.url }}">{{ nav.title }}</a>
-          {%- endif %}
-        {%- endfor %}
-      </nav>
-    </header>
+    <head>
+        <title>{{ page.title }} | {{ site.title }}</title>
 
-    <div id="content">
-      <span class="version_note">
-        This is the 0.9 version of the docs. You could also see the
-        <a href="http://dev.wok.mythmon.com{{ page.url }}">
-          dev version of this page.
-        </a>
-      </span>
+        <!-- font imports -->
+        <link href='http://fonts.googleapis.com/css?family=Orbitron:700,900&v2'
+                rel='stylesheet' type='text/css'>
 
-      {%- block content %}
-      {%- endblock %}
-    </div>
+        <!-- base CSS includes -->
+        <link rel="stylesheet" type="text/css" href="/css/base.css"/>
 
-    <footer>
-      {{ site.slugs.footer.content|safe }}
-      <p>Last generated: {{ site.datetime.strftime('%c') }}.</p>
-    </footer>
-  </div>
-    
-  <script type="text/javascript" src="//www.hellobar.com/hellobar.js"></script>
-  <script type="text/javascript">new HelloBar(1,47972);</script>
-</body>
+        <link rel="icon" href="/img/uber_favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/img/uber_favicon.ico" type="image/x-icon">
 
+        {% block head %}{% endblock %}
+    </head>
+
+    <body>
+        <div id='body_wrapper'>
+
+            <!-- Header -->
+            <div id="header">
+                <h1 id='title'>
+                    <a href='/'>
+                        Music & Code & Uber
+                    </a>
+                </h1>
+
+                <div id='menu'>
+                    <a id='home'    href='/'>Home</a>
+                    <a id='music'    href='/music.html'>Music</a>
+                    <a id='code'    href='/code.html'>Code</a>
+                    <a id='about'   href='/about'>About</a>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div id="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+            <!-- Footer -->
+            <div id="footer" class="small_text">
+                <div id="about_site">
+                    This site uses <a href="https://github.com/mythmon/wok">wok</a>
+                </div>
+                <div id="copyright">
+                    &copy; Copyright <a href="http://www.uberj.com/">Jacques Uber</a>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-26211173-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+         <script type="text/javascript" src="//www.hellobar.com/hellobar.js"></script>
+           <script type="text/javascript">new HelloBar(1,47972);</script>
+    </body>
 </html>
