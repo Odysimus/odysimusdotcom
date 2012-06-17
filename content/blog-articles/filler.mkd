@@ -1,4 +1,4 @@
-type: blog-articles
+type: blog-article
 category: blog
 title: Filler
 date: 2012-06-16
