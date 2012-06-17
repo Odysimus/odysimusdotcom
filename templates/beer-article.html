@@ -1,0 +1,67 @@
+{# Single blog entry template #}
+
+{% extends "beer-base.html" %}
+
+{% block blog_content %}
+    <div id='article'>
+        <div id='article-header'>
+            <a href='/beer'>&laquo; Back to beer blog list</a>
+        </div>
+
+        {% if page.title_img_full %}
+            <div id='title-img-wrap'>
+                <a href='{{ page.title_img_full }}'>
+                    <img id='title-img'
+                        src='{{ page.title_img_title }}'/>
+                </a>
+            </div>
+        {% endif %}
+
+        <div id='title-bar'>
+            <h1 id='title'>
+                <a href='{{ page.url }}'>
+                    {{ page.title }}
+                </a>
+            </h1>
+
+            <div id='subtitle'>
+                {# By {{ page.author }}| #}
+                {{ page.date }}
+
+                {% if page.tags %}
+                    | in {{ tag_list(page.tags) }}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class='content'>
+            {{ page.content }}
+        </div>
+
+        <!-- Disquis comment system -->
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'odysimus';
+            (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = 'http://'+disqus_shortname+'.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] ||
+                        document.getElementsByTagName('body')[0])
+                                .appendChild(dsq);
+            })();
+        </script>
+        <noscript>
+            Please enable JavaScript to view the 
+            <a href="http://disqus.com/?ref_noscript">
+                comments powered by Disqus.<
+            </a>
+        </noscript>
+
+        <div id='article-footer'>
+            <a href='/blog'>&laquo; Back to blog list</a>
+        </div>
+        
+    </div>
+{% endblock %}

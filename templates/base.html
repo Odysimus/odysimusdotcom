@@ -1,59 +1,127 @@
-<html>
+{# Base template #}
 
-<head>
-  <title>{{ site.title }} ~ {{ page.title }}</title>
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="/css/base.css" />
-  <link rel="stylesheet" type="text/css" href="/css/pygments.css" />
-  {% block head %}{% endblock %}
-  <script type="text/javascript">
-    // Google analytics.
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-4316437-2']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-</head>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<body>
-  <div id="wrap">
-    <header>
-      <h1><a href="/">wok</a></h1>
-      <nav>
-        {%- for nav in site.tags['_nav']|sort(attribute='nav_sort') %}
-          {%- if nav.url == page.url %}
-            <a href="{{ nav.url }}" class="active">{{ nav.title }}</a>
-          {%- else %}
-            <a href="{{ nav.url }}">{{ nav.title }}</a>
-          {%- endif %}
-        {%- endfor %}
-      </nav>
-    </header>
+    <head>
+        <title>{{ page.title }} | {{ site.title }}</title>
 
-    <div id="content">
-      <span class="version_note">
-        This is the 0.9 version of the docs. You could also see the
-        <a href="http://dev.wok.mythmon.com{{ page.url }}">
-          dev version of this page.
-        </a>
-      </span>
+        <!-- font imports -->
+        <link href='http://fonts.googleapis.com/css?family=Orbitron:700,900&v2'
+            rel='stylesheet' type='text/css'>
 
-      {%- block content %}
-      {%- endblock %}
-    </div>
+        <!-- base LESS styles -->
+        <link rel="stylesheet/less" type='text/css' href='/less/base.less'/>
 
-    <footer>
-      {{ site.slugs.footer.content|safe }}
-      <p>Last generated: {{ site.datetime.strftime('%c') }}.</p>
-    </footer>
-  </div>
-    
-  <script type="text/javascript" src="//www.hellobar.com/hellobar.js"></script>
-  <script type="text/javascript">new HelloBar(1,47972);</script>
-</body>
+        <!-- Pygments CSS for syntax highlighting -->
+        <link rel="stylesheet" type='text/css' href='/css/pygments.css'/>
 
+        {# head slot for templates that include this base template #}
+        {% block head %}{% endblock %}
+
+        <!-- JavaScript -->
+        <script type="text/javascript" 
+            src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" 
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+            </script>
+        <script type="text/javascript"
+            src="https://raw.github.com/cloudhead/less.js/master/dist/less-1.2.2.min.js">
+            </script>
+        <script type="text/javascript">
+            $(function(){
+                // (jQuery) Run when the document is loaded and ready
+
+                {# Allow adding JavaScript to the document ready #}
+                {% block js_doc_ready %}{% endblock %}
+            });
+
+            function menu_highlight(menu_id){
+                // Highlight the specified menu item
+
+                $("#menu #"+menu_id).attr('id', 'selected');
+            }
+
+            {# Allow adding to the JavaScript initialization #}
+            {% block js_init %}{% endblock %}
+
+            // Google Analytics stuffs
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-32701917-1']);
+            _gaq.push(['_setDomainName', '.odysimus.com']);
+            _gaq.push(['_setAllowHash', 'false']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript'; ga.async = true;
+                if(document.location.protocol == 'https:'){
+                    ga.src = 'https://ssl.google-analytics.com/ga.js';
+                } else {
+                    ga.src = 'http://www.google-analytics.com/ga.js';
+                }
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })()
+        </script>
+
+    </head>
+
+    <body>
+        <div id='body-wrap'>
+
+            <!-- Header -->
+            <div id="header">
+                <h1 id='title'>
+                    <a href='/'>
+                        The Odysimus
+                    </a>
+                </h1>
+
+                <div id='menu'>
+                    <a id='home'    href='/'>home</a>
+                    <a id='blog'    href='/blog'>blog</a>
+					<a id='beer'	href='/beer'>beer</a>
+                    <a id='about'   href='/about'>about</a>
+                    <a id='contact' href='/contact'>contact</a>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div id="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+            <!-- Footer -->
+            <table id="footer">
+                <tr>
+                    <td id='left'>
+                        <div>
+                            Powered by  
+                            <a href="https://github.com/mythmon/wok">wok</a>
+                        </div>
+
+                        <!--<div>
+                        Fork me on 
+                            <a href="http://github.com/robatron/robmd.net">
+                                GitHub
+                            </a>
+                        </div> -->
+                    </td>
+
+                    <td id='right'>
+                        <div>
+                            &copy; Copyright <a href="http://odysimus.com/">Anthony Odenthal</a>
+                        </div>
+
+                        <div>
+                            Last generated {{ site.datetime.strftime('%Y/%m/%d %H:%M:%S') }}
+                        </div>
+                    </td>
+                </tr>
+            </div>
+
+        </div>
+    </body>
 </html>

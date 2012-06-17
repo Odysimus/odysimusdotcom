@@ -1,0 +1,153 @@
+{# Base blog template #}
+
+{% extends "base.html" %}
+
+{# Template macros #}
+{# --------------- #}
+{# Macros to help build the blog system. #}
+{# For more info on jinja2 macros, visit #}
+{# http://jinja.pocoo.org/docs/templates/#macros #}
+
+{# Nospace macro #}
+{# Replace spaces with dashes #}
+{% macro nospace(s) -%}
+    {{ s|replace(" ", "-") }}
+{%- endmacro %}
+
+{# Tag link macro #}
+{# Build a link for a tag, link to its hashed name #}
+{% macro tag_link(tag, label=None) -%}
+    <span class='tag-link'>
+        <a href='/blog/#{{ nospace(tag) }}' class='{{ nospace(tag) }}'>
+            {% if label %}
+                {{ label }}
+            {% else %}
+                {{ tag }}
+            {% endif %}
+        </a>
+    </span>
+{%- endmacro %}
+
+{# Tag list macro #}
+{# Build a tag list from a set of tags #}
+{% macro tag_list(tags) -%}
+    {% for tag in tags %}
+        {% if loop.length == 1 %}
+            {{ tag_link(tag) }}
+        {% elif not loop.last %}
+            {{ tag_link(tag) }},
+        {% else %}
+            and {{ tag_link(tag) }}
+        {% endif %}
+    {% endfor %}
+{%- endmacro %}
+
+{# Import blog-specific CSS styles #}
+{% block head %}
+    <link rel='stylesheet/less' type='text/css' href='/less/blog.less'/>
+{% endblock %}
+
+{# JavaScript #}
+{# ---------- #}
+
+{# JavaScript to run before document loads #}
+{% block js_init %}
+    // Tag filtering (pre-load)
+    // ------------------------
+    function filter_by_tag(tag){
+        /* Remove all blog posts that aren't tagged with `tag`, show
+         * all that are. Ignore blank tag names.
+         */
+
+        if(!tag == ""){
+            $(".article").each(function(index){
+                if( $(this).find("." + tag).length ){
+                    $(this).slideDown("slow");
+                } else {
+                    $(this).slideUp("slow");
+                }
+            });
+        }
+    }
+
+    function show_all(){
+        /* Show all blog posts
+         */
+
+        $(".article").slideDown("slow");
+    }
+{% endblock %}
+
+{# JavaScript to run when document is ready #}
+{% block js_doc_ready %}
+    // Highlight the 'blog' menu item
+    menu_highlight('blog');
+
+    // Tag filtering (post-load)
+    // -------------------------
+
+    $(".tag-link").click(function(){
+        filter_by_tag($(this).find("a").attr('class'));
+    });
+
+    $("#sidebar #show-all").click(function(){
+        show_all();
+    });
+
+    var filter_on_hash = function(){
+        // If there is a hash in the URL, filter immediately
+
+        if(window.location.hash){
+            filter_by_tag(window.location.hash.slice(1));
+        }
+    }(); 
+{% endblock %}
+
+{% block content %}
+    <div id="blog">
+
+        <div id="content">
+            {% block blog_content %}{% endblock %}
+        </div>
+
+        <div id='sidebar'>
+
+            <!-- Blog tag list -->
+            <div id='show-all' class='title'>
+                <a href='/blog/#'>
+                    Show all
+                    ({{ site.categories['blog']|length }})
+                </a>
+            </div>
+            <div id='tags'>
+                <div class='title'>
+                    Tags
+                </div>
+                <ul>
+                    {% for tag in site.tags|sort %}
+                        <li>
+                            {{ tag_link(tag, tag + " (" + site.tags[tag]|length|string() +")") }} 
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- Recent blog post list -->
+            <div id='recent-posts'>
+                <div class='title'>
+                    Recent posts
+                </div>
+                <ul>
+                    {% for post in site.categories['blog']|sort(attribute='datetime', reverse=True) %}
+                        <li>
+                            <a href='{{ post.url }}'>
+                                {{ post.title }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

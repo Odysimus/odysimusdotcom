@@ -1,7 +1,7 @@
-.*.swp
+output
+*.swp
+*.swo
+*.log
+robots.txt
 *.pyc
-build
-MANIFEST
-*/output
-_trial_temp
-dist
+

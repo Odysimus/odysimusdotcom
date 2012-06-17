@@ -1,0 +1,8 @@
+type: blog-entry
+category: blog
+title:
+date:
+tags:
+title_img_src:
+snippet: >
+---

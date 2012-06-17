@@ -1,0 +1,9 @@
+title: Contact
+type: contact
+url: /contact/index.html
+---
+* [Twitter][twitter]
+* [GitHub][gh]
+
+[twitter]:http://twitter.com/odysimus
+[gh]:http://github.com/odysimus

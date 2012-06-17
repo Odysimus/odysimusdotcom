@@ -1,0 +1,4 @@
+title: Beer
+type: beer-list
+url: /beer/index.html
+---

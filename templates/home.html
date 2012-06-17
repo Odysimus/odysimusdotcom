@@ -1,0 +1,28 @@
+{# Template for the home page #}
+
+{% extends "base.html" %}
+
+{% block js_doc_ready %}
+    menu_highlight('home');
+{% endblock %}
+
+{% block content %}
+   <!-- <div>
+        <img src='/img/death-valley.jpg'/>
+        <p class='caption'>
+            Photo by 
+            <a href='http://www.flickr.com/people/daisychaining/'>
+                Elizabeth Trautman
+            </a>
+        </p>
+    </div>
+-->
+    <!-- page title -->
+    <h1>{{ page.title }}</h1>
+
+    <!-- main content title -->
+    <div>
+        {{ page.content }}
+    </div>
+
+{% endblock %}

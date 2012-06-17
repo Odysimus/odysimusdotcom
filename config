@@ -1,3 +1,5 @@
-site_title: Wok
-url_include_index: no
-url_pattern: "/{category}/{slug}/{page}/index.html"
+# wok configuration for odysimus.com
+site_title: Odysimus Dot Com
+author: Anthony Odenthal<admin@odysimus.com>
+url_pattern: /{category}/{slug}.html
+

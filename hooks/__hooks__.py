@@ -1,5 +1,7 @@
-from wok.contrib.hooks import HeadingAnchors
+''' Attach functions to wok hooks '''
+
+import blog_images
 
 hooks = {
-    'page.template.post': [ HeadingAnchors() ],
+    'site.content.gather.post': [blog_images.process_picasaweb_images]
 }

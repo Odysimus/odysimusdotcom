@@ -1,0 +1,6 @@
+title: About
+type: about
+url: /about/index.html
+---
+I am the Odysimus and this is my site. In the comming days (weeks, or months).
+[contact]:/contact
