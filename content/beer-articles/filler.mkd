@@ -5,6 +5,6 @@ date: 2012-06-16
 tags: [nothing]
 title_img_src:
 snippet: >
-	This is what a beer post would look like.:
+   This is what a beer post would look like.:
 ---
 This is what a beer post would look like.
