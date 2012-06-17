@@ -1,4 +1,4 @@
-type: beer-entry
+type: beer-articles
 category: beer
 title: Filler
 date: 2012-06-16
