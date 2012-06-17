@@ -1,10 +1,10 @@
-{# Blog list template #}
+{# beer list template #}
 
 {% extends "beer-base.html" %}
 
-{% block blog_content %}
+{% block beer_content %}
 
-    <!-- blog list -->
+    <!-- beer list -->
     {% if page.subpages %}
         <div id='list'>
             {% for page in page.subpages|sort(attribute='datetime', reverse=True) %}
@@ -57,6 +57,6 @@
         </div>
         
     {% else %}
-        <p> No blog entries to display :-(</p>
+        <p> No beer entries to display :-(</p>
     {% endif %}
 {% endblock %}

@@ -1,10 +1,10 @@
-{# Base blog template #}
+{# Base beer template #}
 
 {% extends "base.html" %}
 
 {# Template macros #}
 {# --------------- #}
-{# Macros to help build the blog system. #}
+{# Macros to help build the beer system. #}
 {# For more info on jinja2 macros, visit #}
 {# http://jinja.pocoo.org/docs/templates/#macros #}
 
@@ -42,7 +42,7 @@
     {% endfor %}
 {%- endmacro %}
 
-{# Import blog-specific CSS styles #}
+{# Import beer-specific CSS styles #}
 {% block head %}
     <link rel='stylesheet/less' type='text/css' href='/less/blog.less'/>
 {% endblock %}
@@ -55,7 +55,7 @@
     // Tag filtering (pre-load)
     // ------------------------
     function filter_by_tag(tag){
-        /* Remove all blog posts that aren't tagged with `tag`, show
+        /* Remove all beer posts that aren't tagged with `tag`, show
          * all that are. Ignore blank tag names.
          */
 
@@ -71,7 +71,7 @@
     }
 
     function show_all(){
-        /* Show all blog posts
+        /* Show all beer posts
          */
 
         $(".article").slideDown("slow");
@@ -80,8 +80,8 @@
 
 {# JavaScript to run when document is ready #}
 {% block js_doc_ready %}
-    // Highlight the 'blog' menu item
-    menu_highlight('blog');
+    // Highlight the 'beer' menu item
+    menu_highlight('beer');
 
     // Tag filtering (post-load)
     // -------------------------
@@ -104,19 +104,19 @@
 {% endblock %}
 
 {% block content %}
-    <div id="blog">
+    <div id="beer">
 
         <div id="content">
-            {% block blog_content %}{% endblock %}
+            {% block beer_content %}{% endblock %}
         </div>
 
         <div id='sidebar'>
 
-            <!-- Blog tag list -->
+            <!-- beer tag list -->
             <div id='show-all' class='title'>
-                <a href='/blog/#'>
+                <a href='/beer/#'>
                     Show all
-                    ({{ site.categories['blog']|length }})
+                    ({{ site.categories['beer']|length }})
                 </a>
             </div>
             <div id='tags'>
@@ -132,13 +132,13 @@
                 </ul>
             </div>
 
-            <!-- Recent blog post list -->
+            <!-- Recent beer post list -->
             <div id='recent-posts'>
                 <div class='title'>
                     Recent posts
                 </div>
                 <ul>
-                    {% for post in site.categories['blog']|sort(attribute='datetime', reverse=True) %}
+                    {% for post in site.categories['beer']|sort(attribute='datetime', reverse=True) %}
                         <li>
                             <a href='{{ post.url }}'>
                                 {{ post.title }}

@@ -7,4 +7,5 @@ title_img_src:
 snippet: >
 	This is what a blog post would look like.:
 ---
+
 This is what a blog post would look like.
