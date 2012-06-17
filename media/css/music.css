@@ -1,0 +1,37 @@
+/* music-specific CSS styles
+ */
+
+a {
+    font-size: 1em;
+}
+span {
+    font-size: 1em;
+}
+/* music list */
+.music-item{
+    margin-bottom: 20px;
+    border-bottom: solid #E5E5E5 1px;
+}
+
+.music-item .title{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.music-item .subtitle{
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* music entry */
+#music-heading{
+    margin-bottom: 20px;
+}
+
+#music-heading .title{
+    margin-bottom: 0px;
+}
+
+#music-heading .subtitle{
+    margin-top: 0px;
+}
