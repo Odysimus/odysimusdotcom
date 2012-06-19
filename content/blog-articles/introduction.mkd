@@ -1,0 +1,14 @@
+type: blog-article
+category: blog
+title: Introduction
+date: 2012-06-18
+tags:[nothing]
+title_img_src:
+snippet: >:
+   First post!.:
+---
+
+So this is the first real post so you won't find much of any real
+value here. What will come in the future are posts spanning a fair
+range of topics. On the list in my head right now are posts relating
+to Amateur radio, Space, Science, Beer, electronics.
