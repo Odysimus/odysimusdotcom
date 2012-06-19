@@ -2,10 +2,10 @@ type: blog-article
 category: blog
 title: Introduction
 date: 2012-06-18
-tags:[nothing]
+tags: nothing
 title_img_src:
-snippet: >:
-   First post!.:
+snippet: >
+   First post!
 ---
 
 So this is the first real post so you won't find much of any real
