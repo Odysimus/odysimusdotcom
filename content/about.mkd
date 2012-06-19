@@ -5,10 +5,10 @@ url: /about/index.html
 About Me
 I am a twenty-something student of physics at Oregon State University. My academic interests
 focus mainly on small satellites and electronics. Along similar lines I am an amateur radio 
-operator holding an extra class license, and I am very active in [W7OSU] [w7osu] the campus 
+operator holding an extra class license, and I am very active in [W7OSU][w7osu] the campus 
 amateur radio club, as well as being a member of the [Benton County Amateur Radio Emergency
-Service] [bcares]. Other "activities" include the campus [Gaming Club] [osuaming], the [Space
-Science Society] [osuoss], 
+Service][bcares]. Other "activities" include the campus [Gaming Club][osuaming], the [Space
+Science Society][osuoss], 
 
 Off campus I enjoy spending time with friends and family, taking part in Oregon's thriving 
 craft and micro brew culture. I play a wide variety of computer games, none of them very well.
@@ -19,17 +19,17 @@ blockbusters, to indie- web video-blogs.
 
 About this site
 
-This site is powered by [Wok][wok] a static website generator written by [Mike Cooper, Mythmon] [mythmon], he
+This site is powered by [Wok][wok] a static website generator written by [Mike Cooper, Mythmon][mythmon], he
 is also a great [DM][dm], and far more talented at this software stuff than I.
 
-The layout of this site has been shamelessly copied from Rob [McGuire-Dale, Robatron] [robatron].
+The layout of this site has been shamelessly copied from Rob [McGuire-Dale, Robatron][robatron].
 
 Without the work done by these two this site would at best be an ugly mess of html pages and
 and links to other services. In reality this site wouldn't exist.
 
 [w7osu]:http://oregonstate.edu/groups/w7osu/
 [bcares]:http://bcares.org
-[osugaming]:http://gaming.oregonstate.edu
+[osuaming]:http://gaming.oregonstate.edu
 [osuoss]:http://chapters.seds.org/osu/
 [wok]:http://wok.mythmon.com/
 [mythmon]:http://mythmon.com/
