@@ -1,4 +1,19 @@
 title: Blog
-type: blog-list
-url: /blog/index.html
+type: index-big
+slug: blog
+url: /blog/index{page}.html
+
+tags: navigation
+navrank: 2
+
+index:
+    height: 200
+    char_limit: 940
+
+pagination:
+    list: page.subpages
+    limit: 5
+    sort_key: date
+    sort_reverse: True
+
 ---

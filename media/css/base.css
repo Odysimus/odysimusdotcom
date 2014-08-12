@@ -1,0 +1,281 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%;
+  min-height: 100%;
+  position: relative; }
+
+body {
+  background: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/debut_light.png") repeat scroll 0 0 transparent;
+  color: #646464;
+  font-family: 'Scada', sans-serif; }
+
+.wrap {
+  -moz-box-shadow: 0 0 1px 1px #aaaaaa;
+  -webkit-box-shadow: 0 0 1px 1px #aaaaaa;
+  box-shadow: 0 0 1px 1px #aaaaaa;
+  border-radius: 3px;
+  background: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/cream_dust.png") repeat scroll 0 0 transparent;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0 36px;
+  width: 960px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bree Serif', serif; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #f07719;
+    font-weight: bold;
+    text-decoration: none; }
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+      color: #f07719;
+      text-decoration: underline; }
+
+p, li {
+  font-size: 16px;
+  line-height: 28px; }
+
+a {
+  color: #0f948a;
+  font-weight: bold;
+  text-decoration: none; }
+  a:hover {
+    color: #0f948a;
+    text-decoration: underline; }
+
+ul li, ol li {
+  font-size: 16px; }
+  ul li p, ol li p {
+    text-align: left; }
+
+.main {
+  margin-top: 13px; }
+  .main img {
+    -moz-box-shadow: 2px 2px 4px #646464;
+    -webkit-box-shadow: 2px 2px 4px #646464;
+    box-shadow: 2px 2px 4px #646464; }
+  .main p img {
+    margin-bottom: 5px;
+    max-height: 320px;
+    max-width: 50%; }
+  .main p:nth-child(odd) img {
+    margin-left: 15px;
+    float: right; }
+  .main p:nth-child(even) img {
+    margin-right: 15px;
+    float: left; }
+  .main pre {
+    /*
+     * This makes the code blocks not run under floated elements, though only.
+     * In chrome. Is there a cross browser solution?
+     */
+    clear: both;
+    display: block;
+    display: -webkit-box; }
+  .main h1 {
+    font-size: 2.0em; }
+  .main h2 {
+    font-size: 1.6em; }
+  .main h3 {
+    font-size: 1.3em; }
+  .main h4 {
+    font-size: 1.0em; }
+  .main h5 {
+    font-size: 1.0em; }
+  .main h6 {
+    font-size: 0.8em; }
+  .main .page_pic img {
+    display: block;
+    margin: 5px 0 20px;
+    max-width: 100%; }
+  .main .page_pic.right {
+    float: right;
+    padding-left: 40px;
+    text-align: right; }
+  .main .page_pic.left {
+    float: left;
+    padding-right: 40px;
+    text-align: left; }
+  .main .page_pic.top {
+    text-align: right; }
+    .main .page_pic.top img {
+      margin-bottom: 5px; }
+  .main .page img {
+    margin: 20px 0 20px 0; }
+
+hr.padded {
+  padding-top: 20px;
+  margin-bottom: 15px;
+  clear: both; }
+
+.base-image img {
+  margin-bottom: 5px;
+  max-height: 480px; }
+
+.list {
+  margin-left: 10px; }
+  .list h3, .list h4 {
+    line-height: 18px; }
+  .list a {
+    color: #f07719; }
+    .list a:hover {
+      color: #f07719;
+      text-decoration: underline; }
+
+.header h2 {
+  color: #0a2a68; }
+.header a {
+  text-decoration: none;
+  color: #0a2a68; }
+  .header a:hover {
+    text-decoration: none;
+    color: #0a2a68; }
+
+.site-header, .logo {
+  margin-top: 13px; }
+
+.logo {
+  position: relative;
+  right: 4em; }
+
+.navigation {
+  float: right;
+  margin-top: 35px;
+  text-align: center; }
+  .navigation a {
+    padding: 15px;
+    margin-left: 5px;
+    color: #646464;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+    .navigation a:hover {
+      color: #f07719;
+      text-decoration: underline; }
+    .navigation a.current_nav {
+      color: #f07719;
+      text-decoration: underline; }
+
+.heading {
+  margin-top: 10px; }
+  .heading h1, .heading h2, .heading h3, .heading h4, .heading h5, .heading h6 {
+    margin: 0px; }
+
+.heading-group h2 {
+  color: #f07719;
+  margin-top: 26px;
+  line-height: 28px; }
+
+ul.subpage-list {
+  list-style: none;
+  margin-top: 2em; }
+  ul.subpage-list li {
+    margin-bottom: 20px;
+    line-height: inherit; }
+
+.subpage-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  color: #f07719; }
+
+.subpage-subtitle {
+  display: block;
+  font-size: 1.0em;
+  display: block; }
+
+.people h1 {
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em; }
+.people h2:not(:first-child) {
+  font-size: .9em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+  color: #646464; }
+.people h2:first-child {
+  margin-bottom: 1em; }
+.people img {
+  float: left;
+  margin-right: 20px;
+  width: 125px;
+  height: 125px; }
+
+.people {
+  margin-top: 2em; }
+
+.featured-blog {
+  margin: 2em 0 3em; }
+  .featured-blog .featured-header {
+    margin-bottom: 13px; }
+  .featured-blog img {
+    float: left;
+    margin: 0 35px 20px 0;
+    max-width: 960px;
+    max-height: 320px; }
+
+.sliding-index {
+  margin-top: 26px;
+  max-height: 1100px;
+  min-height: 1100px; }
+  .sliding-index > div {
+    margin-bottom: 3em; }
+
+div.recent-blogs.columns {
+  margin-left: 0; }
+  div.recent-blogs.columns .recent-blogs-header {
+    display: inline; }
+  div.recent-blogs.columns .sliding-btn {
+    display: inline;
+    margin-left: 13px; }
+    div.recent-blogs.columns .sliding-btn a {
+      color: #646464; }
+
+div.events.columns {
+  float: right; }
+  div.events.columns ul {
+    list-style: none;
+    margin: 26px 0 0;
+    padding-left: 0; }
+    div.events.columns ul li {
+      margin-bottom: 2em; }
+  div.events.columns .no-events {
+    font-style: italic; }
+
+.footer {
+  height: 100px;
+  margin: 0 auto;
+  margin-top: -100px;
+  text-align: center;
+  width: 960px; }
+  .footer span {
+    position: relative;
+    top: 20px; }
+  .footer a {
+    color: #0f948a; }
+  .footer p {
+    font-size: 14px;
+    line-height: 26px; }
+
+.c:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.c {
+  display: inline-block; }
+
+html[xmlns] .c {
+  display: block; }
+
+* html .c {
+  height: 1%; }

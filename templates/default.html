@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <h2>{{ page.title }}</h2>
+    {% include "metadata.html" %}
+{% endblock %}
+{% block content %}
+    <div class="page">
+        {% if page in site.categories['events'] %}
+            <br>
+            <ul>
+                <li class="list">{{page.preview}}</li>
+                <li class="list">{{page.datetime}}</li>
+                <li class="list">{{page.location}}</li>
+            </ul>
+        {% endif %}
+        {{ page.content }}
+    </div>
+{% endblock %}

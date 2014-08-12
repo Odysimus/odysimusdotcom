@@ -1,0 +1,46 @@
+h3.big-index-title {
+  display: block;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.15em; }
+  h3.big-index-title a {
+    color: #f07719; }
+    h3.big-index-title a:hover {
+      color: #f07719;
+      text-decoration: underline; }
+
+.big-index-heading {
+  margin-top: 13px; }
+
+#home .big-index img {
+  margin: 20px 20px 20px 0; }
+
+.big-index img {
+  float: left;
+  margin: 9px 20px 12px 0;
+  max-height: 210px;
+  max-width: 210px; }
+.big-index pre, .big-index code {
+  display: none; }
+
+.big-index-item {
+  clear: both;
+  margin-bottom: 4em; }
+  .big-index-item:first-child {
+    margin-top: 2em; }
+
+.big-index-post {
+  margin-top: 13px;
+  text-align: justify; }
+  .big-index-post h1, .big-index-post h2, .big-index-post h3, .big-index-post img, .big-index-post li {
+    display: none; }
+
+.paging {
+  margin-bottom: 1.4em; }
+
+.metadata {
+  color: #646464;
+  font-size: 13px;
+  line-height: 0px;
+  font-weight: bold; }

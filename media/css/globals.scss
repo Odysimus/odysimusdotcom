@@ -1,0 +1,50 @@
+$creamy-orange: rgb(248, 205, 126);
+$dark-blue: rgb(10, 42, 104);
+$gray: rgb(100, 100, 100);
+$light-blue: rgb(15, 148, 138);
+$light-gray: rgb(170, 170, 170);
+$orange: rgb(240, 119, 25);
+$white: rgb(245, 245, 245);
+
+
+@mixin box-shadow($shadow) {
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin gradient($color1, $color2) {
+    background-color: $color2;
+    background-image: -webkit-gradient(linear, left bottom, left top,
+from($color1), to($color2));
+    background-image: -webkit-linear-gradient($color1, $color2);
+    background-image:    -moz-linear-gradient($color1, $color2);
+    background-image:     -ms-linear-gradient($color1, $color2);
+    background-image:      -o-linear-gradient($color1, $color2);
+    background-image:         linear-gradient($color1, $color2);
+}
+
+@mixin transform($transform) {
+    -moz-transform: $transform;
+   -ms-transform: $transform;
+   -o-transform: $transform;
+   -webkit-transform: $transform;
+}
+
+@mixin transition($transition) {
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+}
+
+@mixin transition-delay($delay) {
+   -moz-transition-delay: $delay;
+   -ms-transition-delay: $delay;
+   -o-transition-delay: $delay;
+   -webkit-transition-delay: $delay;
+}
+
+@mixin img-box-shadow() {
+    @include box-shadow(2px 2px 4px $gray);
+}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+  <h2>{{ page.title }}</h2>
+{% endblock %}
+
+{% block content %}
+
+{{ page.content }}
+
+<ul class="subpage-list">
+{% for subpage in site.tags[page.slug] %}
+
+<li class="list">
+    <h4><a class="big-index-title" href="{{ subpage.url }}">{{ subpage.title }}</a></h4>
+    <span class="big-index-heading">
+        {% set page = subpage %}
+        {% include "metadata.html" %}
+    </span>
+</li>
+
+{% endfor %}
+
+{% endblock %}

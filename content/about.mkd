@@ -1,5 +1,8 @@
 title: About
-type: about
+slug: about
+tags: navigation
+navrank: 1
+
 url: /about/index.html
 ---
 About Me

@@ -1,6 +1,10 @@
-title: Welcome
+title: Helcome
 type: home
-url: /index.html
+url: /index{page}.html
+
+pagination:
+    limit: 3
+    post_limit: 9
 ---
 
 This is my website in the comming days (weeks, months, years) this site will grow to actually have stuff on it.

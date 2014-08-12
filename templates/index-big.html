@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{# Set defaults #}
+{% set min_height = 150 %}
+{% set char_limit = 300 %}
+
+{% if page.index %}
+  {% if page.index.height %}
+    {% set min_height = page.index.height %}
+  {% endif %}
+  {% if page.index.char_limit %}
+    {% set char_limit = page.index.char_limit %}
+  {% endif %}
+  {% if page.index.char_limit %}
+    {% set char_limit = page.index.char_limit %}
+  {% endif %}
+{% endif %}
+
+{% block extrahead %}
+  <link rel="stylesheet" type="text/css" href="/css/big_index.css" />
+{% endblock %}
+
+{% block title %}
+  <h2>{{ page.title }}</h2>
+{% endblock %}
+
+{% block content %}
+  <div class="paging">
+    {% if page.pagination %}
+      {% if page.pagination.prev_page %}
+        <a href="{{ page.pagination.prev_page.url }}">Previous Page</a> |
+      {% endif %}
+      Page {{ page.pagination.cur_page }} of {{ page.pagination.num_pages }}
+      {% if page.pagination.next_page %}
+        | <a href="{{ page.pagination.next_page.url }}">Next Page</a>
+      {% endif %}
+    {% endif %}
+    {{ page.content }}
+  </div>
+
+  <div class="big-index">
+    {% for subpage in pagination.page_items %}
+
+      <div class="big-index-item">
+        <div class="big-index-heading">
+          <h3 class="big-index-title"><a href="{{subpage.url}}">{{subpage.title}}</a></h3>
+          {% set page = subpage %}
+          {% include "metadata.html" %}
+        </div>
+
+        <div class="big-index-post">
+          <span>
+            {% if subpage.image %}
+              <img style="float:left; display:inline" src="{{subpage.image.url}}"/>
+            {% endif %}
+            {% if subpage in site.categories['events'] %}
+                <span class="metadata">
+                    {% if subpage.location %}
+                      {{ subpage.location }} |
+                    {% endif %}
+                    {{ subpage.date.strftime('%A %B %d, %Y') }}
+                </span>
+                {% if not subpage.content %}
+                    <p>{{subpage.preview}}</p>
+                {% endif %}
+            {% endif %}
+            {{subpage.content|truncate(length=char_limit, end="<a href="+subpage.url+">...more</a>")}}
+            </pre>
+          </span>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+{% endblock %}

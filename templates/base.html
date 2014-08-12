@@ -1,126 +1,97 @@
-{# Base template #}
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!DOCTYPE html>
 <html lang="en">
-<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <head>
-        <title>{{ page.title }} | {{ site.title }}</title>
+  <head>
+    <title>{{ site.title }} - {{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap-1.1.0.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/lib/sticky_footer.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/big_index.css"/>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Scada:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Jacques+Francois' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="/js/lib/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="/js/sliding-paginator-thing.js"></script>
+    {% block extrahead %}{% endblock %}
+  </head>
 
-        <!-- font imports -->
-        <link href='http://fonts.googleapis.com/css?family=Orbitron:700,900&v2'
-            rel='stylesheet' type='text/css'>
+  <body>
+  <div class="wrap">
 
-        <!-- base LESS styles -->
-        <link rel="stylesheet/less" type='text/css' href='/less/base.less'/>
-
-        <!-- Pygments CSS for syntax highlighting -->
-        <link rel="stylesheet" type='text/css' href='/css/pygments.css'/>
-
-        {# head slot for templates that include this base template #}
-        {% block head %}{% endblock %}
-
-        <!-- JavaScript -->
-        <script type="text/javascript" 
-            src="https://www.google.com/jsapi"></script>
-        <script type="text/javascript" 
-            src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
-            </script>
-        <script type="text/javascript"
-            src="https://raw.github.com/cloudhead/less.js/master/dist/less-1.2.2.min.js">
-            </script>
-        <script type="text/javascript">
-            $(function(){
-                // (jQuery) Run when the document is loaded and ready
-
-                {# Allow adding JavaScript to the document ready #}
-                {% block js_doc_ready %}{% endblock %}
-            });
-
-            function menu_highlight(menu_id){
-                // Highlight the specified menu item
-
-                $("#menu #"+menu_id).attr('id', 'selected');
-            }
-
-            {# Allow adding to the JavaScript initialization #}
-            {% block js_init %}{% endblock %}
-
-            // Google Analytics stuffs
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-32701917-1']);
-            _gaq.push(['_setDomainName', '.odysimus.com']);
-            _gaq.push(['_setAllowHash', 'false']);
-            _gaq.push(['_trackPageview']);
-            (function() {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript'; ga.async = true;
-                if(document.location.protocol == 'https:'){
-                    ga.src = 'https://ssl.google-analytics.com/ga.js';
-                } else {
-                    ga.src = 'http://www.google-analytics.com/ga.js';
-                }
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ga, s);
-            })()
-        </script>
-
-    </head>
-
-    <body>
-        <div id='body-wrap'>
-
-            <!-- Header -->
-            <div id="header">
-                <h1 id='title'>
-                    <a href='/'>
-                        The Odysimus
-                    </a>
-                </h1>
-
-                <div id='menu'>
-                    <a id='home'    href='/'>home</a>
-                    <a id='blog'    href='/blog'>blog</a>
-                    <a id='about'   href='/about'>about</a>
-                    <a id='contact' href='/contact'>contact</a>
-                </div>
+      <div class="header">
+        <div class="row">
+          <div class="span5 columns">
+            <div class="site-header">
+              <h2><a href="/">Odysimus.com</a></h2>
             </div>
-
-            <!-- Content -->
-            <div id="content">
-                {% block content %}
-                {% endblock %}
+          </div>
+          <div class="span2 columns">
+            <!--
+            <div class="logo">
+              <a href="/"><img src="/img/lug_penguin.gif"/></a>
             </div>
-
-            <!-- Footer -->
-            <table id="footer">
-                <tr>
-                    <td id='left'>
-                        <div>
-                            Powered by  
-                            <a href="https://github.com/mythmon/wok">wok</a>
-                        </div>
-
-                        <div>
-                        Fork me on 
-                            <a href="http://github.com/odysimus/odysimusdotcom">
-                                GitHub
-                            </a>
-                        </div>
-                    </td>
-
-                    <td id='right'>
-                        <div>
-                            &copy; Copyright <a href="http://odysimus.com/">Anthony Odenthal</a>
-                        </div>
-
-                        <div>
-                            Last generated {{ site.datetime.strftime('%Y/%m/%d %H:%M:%S') }}
-                        </div>
-                    </td>
-                </tr>
+	    -->
+          </div>
+          <div class="span9 columns">
+            <div class="navigation">
+              {% for link in site.tags['navigation']|sort(attribute='navrank') %}
+                {% if page.url == link.url %}
+                  <a class="current_nav" href="{{ link.url }}">
+                {% else %}
+                  <a href="{{ link.url }}">
+                {% endif %}
+                  <span>{{ link.title }}</span></a>
+              {% endfor %}
             </div>
+          </div>
+          <br/>
 
         </div>
-    </body>
+      </div>
+      <hr style="padding-top:10px;"/>
+
+      <div class="heading-group">
+        {% block title %}
+        {% endblock %}
+      </div>
+      <div class="main">
+        <div class="base-image">
+          {% if page.image %}
+            <div class="page_pic {{ page.image.where }}" style="
+                {% if page.image.width %}max-width: {{page.image.width}};{% endif %}
+                {% if page.image.height %}max-height: {{page.image.height}};{% endif %}">
+              <img src="{{ page.image.url }}" />
+              {% if page.image.caption %}
+                <span>{{ page.image.caption }}</span>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+        {% block content %}
+        {% endblock %}
+      </div>
+
+    <div class="footer">
+      <span>
+       <p>Powered by <a href="https://github.com/mythmon/wok"><b>wok</b></a></p>
+       <p>Source on <a href="https://github.com/odysimus/odysimusdotcom"><b>GitHub</b></a></p>
+      </span>
+    </div>
+  </div>
+
+<!-- Need to replace with my code
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-26001055-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+</body>
 </html>
