@@ -8,8 +8,8 @@ html {
   position: relative; }
 
 body {
-  background: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/debut_light.png") repeat scroll 0 0 transparent;
-  color: #646464;
+  background: #555555 url("/css/binding_dark.png") repeat scroll 0 0 /*transparent*/;
+  color: #bbbbbb /*#646464*/;
   font-family: 'Scada', sans-serif; }
 
 .wrap {
@@ -17,7 +17,7 @@ body {
   -webkit-box-shadow: 0 0 1px 1px #aaaaaa;
   box-shadow: 0 0 1px 1px #aaaaaa;
   border-radius: 3px;
-  background: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/cream_dust.png") repeat scroll 0 0 transparent;
+  background: url("/css/tweed.png") repeat scroll 0 0 transparent;
   min-height: 100%;
   margin: 0 auto;
   padding: 0 36px;
@@ -125,13 +125,13 @@ hr.padded {
       text-decoration: underline; }
 
 .header h2 {
-  color: #0a2a68; }
+  color: #1992e0; }
 .header a {
   text-decoration: none;
-  color: #0a2a68; }
+  color: #1992e0; }
   .header a:hover {
     text-decoration: none;
-    color: #0a2a68; }
+    color: #f07719; }
 
 .site-header, .logo {
   margin-top: 13px; }
@@ -147,7 +147,7 @@ hr.padded {
   .navigation a {
     padding: 15px;
     margin-left: 5px;
-    color: #646464;
+    color: #858585;
     font-weight: bold;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -180,7 +180,7 @@ ul.subpage-list {
   font-size: 1.2em;
   font-weight: bold;
   display: block;
-  color: #f07719; }
+  color: #ffffff/*#f07719*/; }
 
 .subpage-subtitle {
   display: block;
@@ -235,7 +235,7 @@ div.recent-blogs.columns {
     display: inline;
     margin-left: 13px; }
     div.recent-blogs.columns .sliding-btn a {
-      color: #646464; }
+      color: #ffffff/*#646464*/; }
 
 div.events.columns {
   float: right; }

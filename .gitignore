@@ -1,4 +1,5 @@
 output
+not_content
 *.swp
 *.swo
 *.log
