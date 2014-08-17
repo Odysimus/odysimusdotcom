@@ -1,13 +1,14 @@
 category: blog
 title: Introduction
-date: 2012-06-18
+date: 2014-08-12
 tags: nothing
 title_img_src:
 snippet: >
    First post!
 ---
 
-So this is the first real post so you won't find much of any real
-value here. What will come in the future are posts spanning a fair
-range of topics. On the list in my head right now are posts relating
-to Amateur radio, Space, Science, Beer, electronics.
+
+In many of my dealings I have found the phrase "just google it" comes up time and time again. While the advantage of the internet is access to information, it comes at the cost of having to know how to search through it. The wall I have seen many people run into is made of the vastness of information available. I often deal with having to aggregate information from multiple locations to get an useful result. I hope some of these posts will be helpful for others and allow them to avoid that hassle.
+
+On the other hand my interests cover a very wide range of topics. Radio, Physics, Search and Rescue, Emergency Readiness, Games, Sports, Beer, and Bad Movies. I will attempt to keep the content rolling and to give justice to that which makes it on the site, and to work on anything else to get it there.
+
