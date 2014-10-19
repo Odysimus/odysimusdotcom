@@ -1,9 +1,0 @@
-category: blog
-title: Travis-CI test
-date: 2014-10-17
-tags:none
-title_img_src:
-snippet: >
----
-
-This is an attempt to get some automation of the site done. I hope that if I don't have to manually build and upload the site that I'll be more inclined to do stuff.
