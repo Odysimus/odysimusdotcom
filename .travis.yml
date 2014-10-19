@@ -8,6 +8,5 @@ env:
   - secure: M7Mb6drjNUYqj6WcltDoFopG7BWsQQNGbyN7gLwuRjphnn3HHsEqcmiZ9jEAVveaWZEGXUQqQnPeqEN3fml6f5E8qZnJwHPi9qYSNIgQfONNqnsMNI5zRO5+1nVH6RRR5cvxSDZNXVYHvhYtSuLo45ifGwwskeXBPmfMbDmUwk0=
   - secure: d3uFJ25wEMUDBnjr40hOczu4+bHODIlCSWp6FVWAiag+wmX8XxDiV/2QY/UPk+VhB2API1UxaOWMSpNPTsOolvvO3yT4j1MoJLxWHRSekC9bPPZ6QtkrysHjjy7hktufrMHfPpc/U3W0MwqsL7d1eTj7fUg8eMxP6J0arqStWOo=
 after_success:
-   - openssl aes-256-cbc -k "$keypass" -in shh.enc -out $outfile -d 
-   - ssh-add $outfile
-   - rsync -rlpc -e 'ssh -p 31422 -oStrictHostKeyChecking=no' --delete-before output/ $remote
+   - openssl aes-256-cbc -k "$keypass" -in shh.enc -out $outfile -d
+   - rsync -rlpc -e 'ssh -oStrictHostKeyChecking=no -p 31422 -i $outfile' --delete-after output/ web@droplet.odysimus.com:/var/www/html
