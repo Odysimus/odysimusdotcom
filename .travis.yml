@@ -10,4 +10,4 @@ env:
 after_success:
    - openssl aes-256-cbc -k "$keypass" -in shh.enc -out $outfile -d 
    - ssh-add $outfile
-   - rsync -ac --delete-before output/ $remote
+   - rsync -ac -e 'ssh -p 31422' --delete-before output/ $remote
