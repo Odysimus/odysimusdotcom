@@ -8,4 +8,5 @@ env:
 after_success:
 - openssl aes-256-cbc -k "$keypass" -in shh.enc -out idfile -d
 - chmod 600 idfile
+- ssh-add idfile
 - rsync -rlpc -e 'ssh -o StrictHostKeyChecking=no -p 31422 -i idfile' --delete-after output/ web@droplet.odysimus.com:/var/www/html
