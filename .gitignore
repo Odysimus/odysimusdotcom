@@ -5,6 +5,7 @@ not_content
 *.log
 trav
 trav.pub
+idfile
 robots.txt
 *.pyc
 

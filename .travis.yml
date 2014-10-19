@@ -4,9 +4,8 @@ python:
 script: wok -v
 env:
   global:
-  - secure: QN4bwPTkr40lAUUpI4Ce0PuqE516zOIaxInZAAHgtQXFjMrTaaK3WrLMSJPNAS8vH0qmvG6k7OlFgV6HJGOK5+6u+EBo5G56ZsW5KNVUNdSBh+INQ1yxoH6U1O/F72j/tFPa1Nm3mMpXZxN/z2sk530UyR5LCtLjxMxIQMhMPyA=
-  - secure: M7Mb6drjNUYqj6WcltDoFopG7BWsQQNGbyN7gLwuRjphnn3HHsEqcmiZ9jEAVveaWZEGXUQqQnPeqEN3fml6f5E8qZnJwHPi9qYSNIgQfONNqnsMNI5zRO5+1nVH6RRR5cvxSDZNXVYHvhYtSuLo45ifGwwskeXBPmfMbDmUwk0=
-  - secure: d3uFJ25wEMUDBnjr40hOczu4+bHODIlCSWp6FVWAiag+wmX8XxDiV/2QY/UPk+VhB2API1UxaOWMSpNPTsOolvvO3yT4j1MoJLxWHRSekC9bPPZ6QtkrysHjjy7hktufrMHfPpc/U3W0MwqsL7d1eTj7fUg8eMxP6J0arqStWOo=
+    secure: MSwgU/Tw12zZ8Wz8++sUdn9KcIST+QM+0LWmILiG6Fr1qIVJpIWoUfEg6R3Y3kiYhx1Xu4Fo3BgufmFDhyIVyyRqX14sB9gNPJlmhwMa6rhWTM2GbAKZLFY/+O8NbKuB+FtHa8HltObAejTBudjhju335YHYV+1bYF0JutWw4bA=
 after_success:
-   - openssl aes-256-cbc -k "$keypass" -in shh.enc -out $outfile -d
-   - rsync -rlpc -e 'ssh "-o StrictHostKeyChecking=no" -p 31422 -i $outfile' --delete-after output/ web@droplet.odysimus.com:/var/www/html
+- openssl aes-256-cbc -k "$keypass" -in shh.enc -out idfile -d
+- chmod 600 idfile
+- rsync -rlpc -e 'ssh -o StrictHostKeyChecking=no -p 31422 -i idfile' --delete-after output/ web@droplet.odysimus.com:/var/www/html
