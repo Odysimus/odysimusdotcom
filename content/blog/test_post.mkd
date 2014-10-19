@@ -7,4 +7,4 @@ snippet: >
    A better snippet should go here
 ---
 
-This is a test post to see if there things are working.
+This is a test post to see if there things are working. More test like things.
