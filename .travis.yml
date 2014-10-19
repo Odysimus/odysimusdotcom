@@ -1,4 +1,11 @@
 language: python
 python:
-  - "2.7"
-script: "wok -v"
+- '2.7'
+script: wok -v
+env:
+  global:
+  - secure: QN4bwPTkr40lAUUpI4Ce0PuqE516zOIaxInZAAHgtQXFjMrTaaK3WrLMSJPNAS8vH0qmvG6k7OlFgV6HJGOK5+6u+EBo5G56ZsW5KNVUNdSBh+INQ1yxoH6U1O/F72j/tFPa1Nm3mMpXZxN/z2sk530UyR5LCtLjxMxIQMhMPyA=
+  - secure: M7Mb6drjNUYqj6WcltDoFopG7BWsQQNGbyN7gLwuRjphnn3HHsEqcmiZ9jEAVveaWZEGXUQqQnPeqEN3fml6f5E8qZnJwHPi9qYSNIgQfONNqnsMNI5zRO5+1nVH6RRR5cvxSDZNXVYHvhYtSuLo45ifGwwskeXBPmfMbDmUwk0=
+  - secure: d3uFJ25wEMUDBnjr40hOczu4+bHODIlCSWp6FVWAiag+wmX8XxDiV/2QY/UPk+VhB2API1UxaOWMSpNPTsOolvvO3yT4j1MoJLxWHRSekC9bPPZ6QtkrysHjjy7hktufrMHfPpc/U3W0MwqsL7d1eTj7fUg8eMxP6J0arqStWOo=
+after_success: openssl aes-256-cbc -k "$keypass" -in shh.enc -out $outfile -d ssh-add
+  $outfile rsync -ac --delete-before output/ $remote

@@ -3,6 +3,8 @@ not_content
 *.swp
 *.swo
 *.log
+trav
+trav.pub
 robots.txt
 *.pyc
 
