@@ -2,12 +2,10 @@ language: python
 python:
 - '2.7'
 script: wok -v
-env:
-  global:
-    secure: MSwgU/Tw12zZ8Wz8++sUdn9KcIST+QM+0LWmILiG6Fr1qIVJpIWoUfEg6R3Y3kiYhx1Xu4Fo3BgufmFDhyIVyyRqX14sB9gNPJlmhwMa6rhWTM2GbAKZLFY/+O8NbKuB+FtHa8HltObAejTBudjhju335YHYV+1bYF0JutWw4bA=
+#env:
+#  global:
+    #secure: MSwgU/Tw12zZ8Wz8++sUdn9KcIST+QM+0LWmILiG6Fr1qIVJpIWoUfEg6R3Y3kiYhx1Xu4Fo3BgufmFDhyIVyyRqX14sB9gNPJlmhwMa6rhWTM2GbAKZLFY/+O8NbKuB+FtHa8HltObAejTBudjhju335YHYV+1bYF0JutWw4bA=
 after_success:
-- mkdir -m 700 .ssh
-- openssl aes-256-cbc -k "$keypass" -in shh.enc -out .ssh/id_rsa -d
-- chmod 600 .ssh/id_rsa
-- ssh-add .ssh/id_rsa
-- rsync -vrlc -e 'ssh -o StrictHostKeyChecking=no -p 31422 -i .ssh/id_rsa' --delete-after output/ web@droplet.odysimus.com:/var/www/html
+- openssl aes-256-cbc -K $encrypted_377b3159818f_key -iv $encrypted_377b3159818f_iv -in privatetkey -out trav -d
+- chmod 600 trav
+- rsync -rlc -e 'ssh -o StrictHostKeyChecking=no -p 31422 -i trav' --delete-after  output/ web@droplet.odysimus.com:/var/www/html
