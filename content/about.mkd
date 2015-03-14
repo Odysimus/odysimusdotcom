@@ -29,6 +29,8 @@ The layout of this site has been shamelessly copied from the OSU [Linux Users Gr
 
 Without the work done by these people this site would at best be an ugly mess of html pages and links to other services. In reality this site wouldn't exist.
 
+When I get content up it is licensed under the CC [Attribution-NonCommercial-ShareAlike-International 4.0][cclicense]. If you intending on reusing the content in a manner that generates income you must get permission first.
+
 [w7osu]:http://oregonstate.edu/groups/w7osu/
 [bcares]:http://bcares.org
 [osuaming]:http://gaming.oregonstate.edu
@@ -38,3 +40,4 @@ Without the work done by these people this site would at best be an ugly mess of
 [dm]:http://en.wikipedia.org/wiki/Dungeon_Master
 [lug]:http://lug.oregonstate.edu
 [subtlepatterns]:http://subtlepatterns.com/
+[cclicense]:http://creativecommons.org/licenses/by-nc-sa/4.0/

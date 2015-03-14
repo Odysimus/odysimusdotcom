@@ -1,0 +1,18 @@
+category: blog
+title: Cheesy Movies for Halloween
+date: 2014-10-31
+# tags: nothing
+title_img_src:
+snippet: >
+   Some of the best 
+---
+
+Looking for Halloween entertainment? Here are a few movies that are a little spooky, maybe a little scary, and all are really cheesy. We'll start with the lite-heated [Fido][fido]. Then move on to the delightful [Netherbeast Incorporated][nbinc]. For a more traditional experience we'll cover the [Feast Trilogy][feasttril]. A quick note none of these films are appropriate for younger audiences.
+
+Fist of [Fido][fido]. Fido is a pretty classic tale of boy gets dog, dog gets taken away, boy must get dog back. Sounds like the kind of movie set in 1950's anytown, USA right? Well it is, complete with just about every stereotype you can imagine. This tale has a little twist, the "dog" is actually a zombie. The back story is that some space dust irradiated the earth causing all the dead to rise. A miracle of science allows zombies to be collared turning them into docile, blundering servants of the living. For those with some cash a proper burial including a post-mortem beheading is available to ensure a deceased doesn't spend the afterlife as a menial laborer, or household servant. Our hero Timmy is an outcast, picked on at school and ignored by his father, who was forced to kill the zombie reincarnation of his own father as a child, Timmy struggles to fit in. Things start looking up when a new family moves in across the street. The father is head of security for the company that handles all things zombie, the daughter speaks to Timmy without insulting him. To round things off his mom brings home a brand new zombie to help out around the house. The new zombie quickly becomes a great companion for Timmy. This comes with a couple of catches, for one a zombie in the house brings up issues with dear old daddy, for another Fido's collar doesn't always work. When a malfunctioning collar leads to an unexpected death, or two, or twenty-five things get interesting. All the while the film stays in character. If you enjoyed the Fallout games then check out his movie.
+
+For another fun Halloween flick check out [Netherbeast Incorporated][nbinc]
+
+
+[fido][http://en.wikipedia.org/wiki/Fido_(film)]
+[nbinc][http://en.wikipedia.org/wiki/Netherbeast_Incorporated]

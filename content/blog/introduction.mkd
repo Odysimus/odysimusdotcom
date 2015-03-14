@@ -1,7 +1,7 @@
 category: blog
 title: Introduction
 date: 2014-08-12
-tags: nothing
+#tags: nothing
 title_img_src:
 snippet: >
    First post!
