@@ -2,6 +2,7 @@ language: python
 python:
 - '2.7'
 script: wok -v
+sudo: false
 #env:
 #  global:
     #secure: MSwgU/Tw12zZ8Wz8++sUdn9KcIST+QM+0LWmILiG6Fr1qIVJpIWoUfEg6R3Y3kiYhx1Xu4Fo3BgufmFDhyIVyyRqX14sB9gNPJlmhwMa6rhWTM2GbAKZLFY/+O8NbKuB+FtHa8HltObAejTBudjhju335YHYV+1bYF0JutWw4bA=
