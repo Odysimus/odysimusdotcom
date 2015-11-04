@@ -14,5 +14,6 @@ Fist of [Fido][fido]. Fido is a pretty classic tale of boy gets dog, dog gets ta
 For another fun Halloween flick check out [Netherbeast Incorporated][nbinc]
 
 
-[fido][http://en.wikipedia.org/wiki/Fido_(film)]
-[nbinc][http://en.wikipedia.org/wiki/Netherbeast_Incorporated]
+[fido]:http://en.wikipedia.org/wiki/Fido_(film)
+[nbinc]:http://en.wikipedia.org/wiki/Netherbeast_Incorporated
+[feasttril]:https://en.wikipedia.org/wiki/Feast_(2005_film)
