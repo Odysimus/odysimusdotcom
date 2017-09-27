@@ -1,5 +1,5 @@
 # wok configuration for odysimus.com
 site_title: Odysimus Dot Com
-author: Anthony Odenthal <admin@odysimus.com>
+author: Anthony Odenthal 
 url_pattern: /{category}/{slug}.html
 

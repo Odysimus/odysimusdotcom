@@ -1,6 +1,6 @@
 category: blog
 title: Cheesy Movies for Halloween
-date: 2014-10-31
+datetime: 2014-10-31 12:00:00
 # tags: nothing
 title_img_src:
 snippet: >

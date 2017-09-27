@@ -1,6 +1,6 @@
 category: blog
 title: Introduction
-date: 2014-08-12
+datetime: 2014-08-12 12:00:00
 #tags: nothing
 title_img_src:
 snippet: >

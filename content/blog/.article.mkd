@@ -1,6 +1,6 @@
 category: blog
 title: Title goes here
-date: 2014-09-23
+datetime: 2014-09-23
 tags: nothing
 title_img_src:
 snippet: >
