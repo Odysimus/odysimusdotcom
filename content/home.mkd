@@ -1,4 +1,4 @@
-title: Helcome
+title: Welcome
 type: home
 url: /index{page}.html
 
@@ -7,4 +7,4 @@ pagination:
     post_limit: 9
 ---
 
-This is my website in the comming days (weeks, months, years) this site will grow to actually have stuff on it.
+This is my website in the coming days (weeks, months, years) this site will grow to actually have stuff on it.

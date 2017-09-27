@@ -5,7 +5,36 @@
     {{ page.content }}
 
     <div class="c">
-
+       <div class="events span5 row">
+<!--   
+      <!--Upcoming Events-->
+		 <h3><a href='http://lug.oregonstate.edu/events'>Upcoming Events</a></h3>
+         <ul>
+          {% for event in site.categories['events'] | sort(attribute='datetime') if event.datetime > site.datetime %}
+            <li class="list">
+              <h4>
+                <a href="{{ event.url }}">{{ event.title }}</a>
+              </h4>
+              <span class="metadata">
+                {% if event.location %}
+                  {{ event.location }} |
+                {% endif %}
+                {{ event.date.strftime('%A %B %d, %Y') }}
+              </span>
+              <p>
+              {{ event.preview }}
+              </p>
+            </li>
+          {% endfor %}
+         </ul>
+          {% for event in site.categories['events'] | sort(attribute='datetime', reverse=True) %}
+            {% if loop.first and event.datetime < site.datetime %}
+              <p class="no-events">Check back soon for future events!</p>
+            {% endif %}
+          {% endfor %}
+      </div>
+      <!--End Upcoming Events-->
+-->
       <!--Blog Posts-->
       <div class="recent-blogs">
         <div class="big-index">
